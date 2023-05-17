@@ -5,6 +5,7 @@
       <router-link :to="{name: 'HomeView'}">Home</router-link> |
       <!-- TODO: 평론 리스트 -->
       <!-- TODO: 추천 영화 -->
+      <router-link :to="{name: 'RecommandView'}">Recommand</router-link> |
       <!-- TODO: 검색 -->
       <router-link :to="{name: 'SearchView'}">Search</router-link>
       <!-- TODO: 프로필 -->

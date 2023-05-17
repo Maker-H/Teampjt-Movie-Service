@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import SearchView from '@/views/SearchView.vue'
+import RecommandView from '@/views/RecommandView.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/v/search',
     name: 'SearchView',
     component: SearchView
+  },
+  {
+    path: '/v/recommand',
+    name: 'RecommandView',
+    component: RecommandView
   },
 ]
 
