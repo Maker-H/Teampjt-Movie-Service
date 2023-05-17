@@ -2,10 +2,11 @@
   <div id="app">
     <nav>
       <!-- TODO: 홈 -->
-      <router-link to="/">Home</router-link> |
+      <router-link :to="{name: 'HomeView'}">Home</router-link> |
       <!-- TODO: 평론 리스트 -->
       <!-- TODO: 추천 영화 -->
       <!-- TODO: 검색 -->
+      <router-link :to="{name: 'SearchView'}">Search</router-link>
       <!-- TODO: 프로필 -->
     </nav>
     <router-view/>
