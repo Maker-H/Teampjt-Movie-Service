@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import SearchView from '@/views/SearchView.vue'
 import RecommandView from '@/views/RecommandView.vue'
 import ProfileView from '@/views/ProfileView.vue'
+import CommentView from '@/views/CommentView.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/v/profile',
     name: 'ProfileView',
     component: ProfileView
+  },
+  {
+    path: '/v/comments',
+    name: 'CommentView',
+    component: CommentView
   },
 ]
 
