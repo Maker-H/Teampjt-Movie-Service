@@ -4,30 +4,38 @@ import { API_URL } from '@/store/CONSTS'
 
 const state = () => {
   return {
-    latestMovieList: null,
+    latestMovieList: [],
   }
 }
 
 const getters = {
-
+  fiveLatestMovies(state) {
+    return state.latestMovieList.slice(0, 5)
+  }
 }
 const mutations = {
-  LATEST_MOVIES(state) {
+  GET_LATEST_MOVIELIST(state) {
     axios({
       methods: 'get',
       url: `${API_URL}/movies/`
     })
       .then((res) => {
-        console.log(res.data)
-        state.latestMovieList = res.data
+        // console.log(res.data)
+        const sortedMovies = res.data.sort((a, b) => {
+          // release_date 값을 비교하여 정렬 순서를 결정
+          // a - b 하면 오름차순
+          // b - a 하면 내림차순 
+          return new Date(b.released_date) - new Date(a.released_date);
+        });
+        state.latestMovieList = sortedMovies
       })
       .catch(err => console.log(err))
   }
 }
 const actions = {
-  latestMovies(context) {
+  getLatestMovieList(context) {
     // console.log('actions')
-    context.commit('LATEST_MOVIES')
+    context.commit('GET_LATEST_MOVIELIST')
   }
 }
 

@@ -1,7 +1,13 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <!-- <p>{{ latestMovieList }}</p> -->
+    <div 
+      v-for="(movie, idx) in fiveLatestMovies"
+      :key="idx"
+    > 
+      {{ movie.title }}
+      {{ movie.released_date }}
+    </div>
   </div>
 </template>
 
@@ -9,17 +15,17 @@
 export default {
   name: "HomeView",
   created() {
-    this.latestMovies();
+    this.getLatestMovieList();
   },
   computed: {
-    latestMovieList() {
-      // return this.$store.getters['todo/importantTodoList']
+    fiveLatestMovies() {
+      return this.$store.getters['home/fiveLatestMovies']
       // return this.$store.state.home.latestMovieList
     }
   },
   methods: {
-    latestMovies() {
-      this.$store.dispatch("home/latestMovies");
+    getLatestMovieList() {
+      this.$store.dispatch("home/getLatestMovieList")
     },
   },
 };
