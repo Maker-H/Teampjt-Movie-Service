@@ -1,9 +1,10 @@
 import axios from 'axios'
-// import CONSTS from '@/store/CONSTS'
+// 
+import { API_URL } from '@/store/CONSTS'
 
 const state = () => {
   return {
-    latestMovies: null,
+    latestMovieList: null,
   }
 }
 
@@ -14,12 +15,11 @@ const mutations = {
   LATEST_MOVIES(state) {
     axios({
       methods: 'get',
-      url: 'http://127.0.0.1:8000/api/movies/'
-      // url: `${CONSTS.API_URL}/movies/`
+      url: `${API_URL}/movies/`
     })
       .then((res) => {
         console.log(res.data)
-        state.latestMovies = res.data
+        state.latestMovieList = res.data
       })
       .catch(err => console.log(err))
   }
