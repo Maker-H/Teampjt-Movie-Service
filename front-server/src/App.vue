@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <nav>
+      <!-- TODO: 홈 -->
       <router-link to="/">Home</router-link> |
+      <!-- TODO: 평론 리스트 -->
+      <!-- TODO: 추천 영화 -->
+      <!-- TODO: 검색 -->
+      <!-- TODO: 프로필 -->
     </nav>
     <router-view/>
   </div>
