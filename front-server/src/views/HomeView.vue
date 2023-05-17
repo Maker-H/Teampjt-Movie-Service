@@ -5,11 +5,15 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'HomeView',
-  components: {
-  }
-}
+  name: "HomeView",
+  created() {
+    this.latestMovies();
+  },
+  methods: {
+    latestMovies() {
+      this.$store.dispatch("home/latestMovies");
+    },
+  },
+};
 </script>
