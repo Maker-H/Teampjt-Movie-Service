@@ -3,8 +3,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.shortcuts import get_object_or_404, get_list_or_404
-from .serializers import MovieListSerializer, MovieSerializer, CommentSerializer
-from .models import Movie, Comment
+from .serializers import MovieListSerializer, MovieSerializer, CommentSerializer, GenreSerializer
+from .models import Movie, Comment, Genre
 
 # Create your views here.
 @api_view(['GET'])
@@ -47,7 +47,7 @@ def comment_detail(request, comment_pk):
         serializer = CommentSerializer(comment, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
-            return Response(serializer.data)
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 @api_view(['POST'])
@@ -58,6 +58,15 @@ def comment_create(request, movie_pk):
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie=movie)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+@api_view(['GET'])
+def genre_list(request):
+    if request.method == 'GET':
+        genres = get_list_or_404(Genre)
+        serializer = GenreSerializer(genres, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+        
+
 
 
 

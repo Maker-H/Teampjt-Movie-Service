@@ -20,7 +20,6 @@ export default {
   computed: {
     fiveLatestMovies() {
       return this.$store.getters['home/fiveLatestMovies']
-      // return this.$store.state.home.latestMovieList
     }
   },
   methods: {
