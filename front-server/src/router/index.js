@@ -5,6 +5,7 @@ import SearchView from '@/views/SearchView.vue'
 import RecommandView from '@/views/RecommandView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 import CommentView from '@/views/CommentView.vue'
+import DetailView from '@/views/DetailView.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/v/comments',
     name: 'CommentView',
     component: CommentView
+  },
+  {
+    path: '/v/detail/:movieId',
+    name: 'DetailView',
+    component: DetailView
   },
 ]
 
