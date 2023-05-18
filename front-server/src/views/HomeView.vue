@@ -1,26 +1,25 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <div 
-      v-for="(movie, idx) in fiveLatestMovies"
-      :key="idx"
-    > 
-      {{ movie.title }}
-      {{ movie.released_date }}
+    <div> 
+      <MovieItemList :movies="fiveLatestMovies"/>
     </div>
   </div>
 </template>
 
 <script>
+import MovieItemList from '@/components/MovieItemList.vue';
 export default {
   name: "HomeView",
+  components: {
+    MovieItemList
+  },
   created() {
     this.getLatestMovieList();
   },
   computed: {
     fiveLatestMovies() {
       return this.$store.getters['home/fiveLatestMovies']
-      // return this.$store.state.home.latestMovieList
     }
   },
   methods: {
