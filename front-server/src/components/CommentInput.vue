@@ -1,0 +1,36 @@
+<template>
+  <div>
+    <form @submit.prevent="createComment">
+        <label for="content">평론 : </label>
+        <textarea id="content" cols="30" rows="10" v-model="content"></textarea>
+        <input type="submit" value="등록">
+    </form>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CommentInput',
+  data() {
+    return{
+        content: null,
+    }
+  },
+  methods: {
+    createComment() {
+      const content = this.content
+      const movieId = this.$route.params.movieId
+      if (!content) {
+        alert('내용을 입력해주세요.')
+        return
+      }
+      const payload = { content, movieId}
+      this.$store.dispatch('createComment', payload)
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>

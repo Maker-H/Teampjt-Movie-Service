@@ -2,16 +2,19 @@
   <div>
     <h1>DetailView</h1> 
     <DetailItem :movie="detailMovie"/>
+    <CommentForm />
   </div>
 </template>
 
 <script>
 import DetailItem from '@/components/DetailItem'
+import CommentForm from '@/components/CommentForm'
 
 export default {
     name: 'DetailView',
     components: {
-        DetailItem
+        DetailItem,
+        CommentForm
     },
     data() {
         return {
