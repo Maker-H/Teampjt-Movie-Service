@@ -33,13 +33,27 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Django Apps
     'movies',
 
     'rest_framework',
+
+    # swagger
     'drf_yasg',
 
     # cors
     'corsheaders',
+
+    # dj_rest_auth 
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+
+    # dj_rest_auth registration
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,6 +62,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+# dj_rest_auth settings
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
