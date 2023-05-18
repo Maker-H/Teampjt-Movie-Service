@@ -14,7 +14,13 @@ const getters = {
   }
 }
 const mutations = {
-  GET_LATEST_MOVIELIST(state) {
+  GET_LATEST_MOVIELIST(state, latestMovieList) {
+    state.latestMovieList = latestMovieList
+  }
+}
+const actions = {
+  getLatestMovieList(context) {
+    // console.log('actions')
     axios({
       methods: 'get',
       url: `${API_URL}/movies/`
@@ -27,16 +33,10 @@ const mutations = {
           // b - a 하면 내림차순 
           return new Date(b.released_date) - new Date(a.released_date);
         });
-        state.latestMovieList = sortedMovies
+        context.commit('GET_LATEST_MOVIELIST', sortedMovies)
       })
       .catch(err => console.log(err))
-  }
-}
-const actions = {
-  getLatestMovieList(context) {
-    // console.log('actions')
-    context.commit('GET_LATEST_MOVIELIST')
-  }
+  }    
 }
 
 export default {
