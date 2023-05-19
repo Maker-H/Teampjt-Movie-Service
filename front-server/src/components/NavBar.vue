@@ -36,7 +36,9 @@ export default {
         alert('검색 결과가 없습니다.')
         return
       }
-      this.$router.push({name : 'SearchView', query: {title : this.movieTitle}})
+      this.$store.dispatch('search/getSearchMovieList', this.movieTitle)
+      
+      this.$router.push({name : 'SearchView', query : {title : this.movieTitle}})
         .catch(err => {
           // 중복된 네비게이션 오류를 처리합니다.
           if (err.name !== 'NavigationDuplicated') {
