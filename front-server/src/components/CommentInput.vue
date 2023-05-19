@@ -1,9 +1,14 @@
 <template>
   <div>
-    <form @submit.prevent="createComment">
-        <label for="content">평론 : </label>
-        <textarea id="content" cols="30" rows="10" v-model="content"></textarea>
-        <input type="submit" value="등록">
+    <form v-if="!updateCommentObject" @submit.prevent="createComment">
+          <label for="content">평론 : </label>
+          <textarea id="content" cols="30" rows="10" v-model="content"></textarea>
+          <input type="submit" value="등록">
+    </form>
+    <form v-else @submit.prevent="updateComment">
+          <label for="content">평론 : </label>
+          <textarea id="content" cols="30" rows="10" v-model="updateCommentObject.content"></textarea>
+          <input type="submit" value="수정">
     </form>
   </div>
 </template>
@@ -18,6 +23,11 @@ export default {
   },
   created() {
   },
+  computed: {
+    updateCommentObject() {
+      return this.$store.getters['comment/updateCommentObject']
+    }
+  },
   methods: {
     createComment() {
       const content = this.content
@@ -29,6 +39,13 @@ export default {
       const payload = { content, movieId }
       this.$store.dispatch('comment/createComment', payload)
       this.content = null
+    },
+    updateComment() {
+      const id = this.updateCommentObject.id
+      const content = this.updateCommentObject.content
+
+      const payload = {id, content}
+      this.$store.dispatch('comment/updateComment', payload)
     }
   }
 }

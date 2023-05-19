@@ -2,8 +2,7 @@
   <div>
     <h1>평론 리스트</h1>
     <hr>
-    <CommentList v-for="comment in comments" :key="comment.id"
-    :comment="comment"/>
+    <CommentList :comments="comments"/>
   </div>
 </template>
 
