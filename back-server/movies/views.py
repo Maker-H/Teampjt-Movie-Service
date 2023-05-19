@@ -88,13 +88,14 @@ def create_likes(request, movie_pk):
             return Response({'message': 'Movie liked successfully.'}, status=status.HTTP_201_CREATED)
 
 
-@api_view(['GET'])
+@api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def liked_list(request):
-    user = request.user
-    liked_movies = user.like_movies.all()
-    serializer = MovieListSerializer(liked_movies, many=True)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    if request.method == 'POST':
+        user = request.user
+        liked_movies = user.like_movies.all()
+        serializer = MovieListSerializer(liked_movies, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 

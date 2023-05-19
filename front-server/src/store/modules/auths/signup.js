@@ -1,7 +1,8 @@
 import axios from 'axios'
 // 
-import { API_URL } from '@/store/CONSTS'
 import router from '@/router'
+import { API_URL } from '@/store/CONSTS'
+
 
 const state = () => {
 }
@@ -10,20 +11,21 @@ const getters = {
 const mutations = {
 }
 const actions = {
-  login(context, user) {
+  signup(context, user) {
     const username = user.username
-    const password = user.password
+    const password1 = user.password1
+    const password2 = user.password2
     axios({
       method: 'post',
-      url: `${API_URL}/login/`,
+      url: `${API_URL}/login/registeration/`,
       data: {
-        username, password
+        username, password1, password2
       }
     })
       .then((res) => {
         // console.log(res)
-        localStorage.setItem('access', JSON.stringify(res.data.access));
-        localStorage.setItem('refresh', JSON.stringify(res.data.refresh));
+        localStorage.setItem('access', JSON.stringify(res.data.access))
+        localStorage.setItem('refresh', JSON.stringify(res.data.refresh))
         router.push({name: 'HomeView'}).catch(() => {})
       })
       .catch(err => console.log(err))

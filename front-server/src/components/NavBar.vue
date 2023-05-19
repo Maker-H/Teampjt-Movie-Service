@@ -12,7 +12,8 @@
         <button @click="logout">Logout</button>
         <!-- 로그인 안했을 때 -->
         <router-link :to="{name: 'LoginView'}">Login</router-link>
-        <!-- TODO: signup -->
+        <router-link :to="{name: 'SignUpView'}">SignUp</router-link>
+
       </div>
     </nav>
   </div>
