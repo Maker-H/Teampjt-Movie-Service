@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
+    # jwt
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+
     # swagger
     'drf_yasg',
 
@@ -68,24 +72,26 @@ INSTALLED_APPS = [
 
 # enable JWT auth in dj_rest_auth
 REST_AUTH = {
-    # 'USE_JWT': True,
+    'USE_JWT': True,
+    'JWT_AUTH_HTTPONLY':False,
 
     'SESSION_LOGIN': False,
 
-    # 'JWT_AUTH_COOKIE': 'my-app-auth',
-    # 'JWT_AUTH_REFRESH_COOKIE': 'my-refresh-token',
+    'JWT_AUTH_COOKIE': 'my-app-auth',
+    'JWT_AUTH_REFRESH_COOKIE': 'my-refresh-token',
+
 }
 
 # dj_rest_auth settings
 SITE_ID = 1
 
-# simple_jwt auth configuration
 REST_FRAMEWORK = {
     # Authentication
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        # 'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
-        # 토큰으로 사용자 식별하게 하기
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication', 
+
+        # jwt를 사용하거나 token을 사용하거나 둘 중 하나만 사용해야함
+        # 'rest_framework.authentication.TokenAuthentication',
     ),
 
     #     # permission
@@ -95,10 +101,10 @@ REST_FRAMEWORK = {
     ],
 }
 
-# SIMPLE_JWT = {
-#     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
-#     'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
-# }
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
