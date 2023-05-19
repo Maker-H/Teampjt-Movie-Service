@@ -1,6 +1,7 @@
-import axios from "axios";
-//
-import { API_URL } from "@/store/CONSTS";
+import axios from 'axios'
+// 
+import { API_URL } from '@/store/CONSTS'
+
 
 const state = () => {
   return {

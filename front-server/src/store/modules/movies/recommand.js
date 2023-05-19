@@ -1,13 +1,9 @@
 import axios from "axios";
 import _ from "lodash";
 //
-import {
-  weatherParams,
-  weatherDataPreprocessing,
-  weatherToGenre,
-} from "/api/weather";
-//
-import { API_URL } from "@/store/CONSTS";
+import { weatherParams, weatherDataPreprocessing, weatherToGenre } from '/api/weather'
+// 
+import { API_URL } from '@/store/CONSTS'
 
 const state = () => {
   return {
