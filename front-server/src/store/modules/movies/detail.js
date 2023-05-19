@@ -1,6 +1,6 @@
 import axios from 'axios'
 // 
-import { API_URL } from '@/store/CONSTS'
+import { API_URL } from '@/store/modules/movies/CONSTS'
 
 const state = () => {
   return {
