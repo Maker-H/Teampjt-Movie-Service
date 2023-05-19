@@ -6,7 +6,8 @@
         <router-link :to="{name: 'CommentView'}">Comment</router-link> |
         <router-link :to="{name: 'RecommandView'}">Recommand</router-link> |
         <router-link :to="{name: 'SearchView'}">Search</router-link> |
-        <router-link :to="{name: 'ProfileView'}">Profile</router-link>
+        <router-link :to="{name: 'ProfileView'}">Profile</router-link> |
+        <router-link :to="{name: 'LoginView'}">Login</router-link>
       </div>
     </nav>
   </div>
