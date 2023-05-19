@@ -1,6 +1,8 @@
 import axios from 'axios'
 // 
+import router from '@/router'
 import { API_URL } from '@/store/CONSTS'
+
 
 const state = () => {
 }
@@ -22,8 +24,9 @@ const actions = {
     })
       .then((res) => {
         // console.log(res)
-        localStorage.setItem('access', JSON.stringify(res.data.access));
-        localStorage.setItem('refresh', JSON.stringify(res.data.refresh));
+        localStorage.setItem('access', JSON.stringify(res.data.access))
+        localStorage.setItem('refresh', JSON.stringify(res.data.refresh))
+        router.push({name: 'HomeView'}).catch(() => {})
       })
       .catch(err => console.log(err))
   }
