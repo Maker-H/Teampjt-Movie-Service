@@ -6,6 +6,8 @@ import detail from '@/store/modules/movies/detail'
 import recommand from '@/store/modules/movies/recommand'
 import comment from '@/store/modules/movies/comment'
 import login from '@/store/modules/auths/login'
+import logout from '@/store/modules/auths/logout'
+import comment from '@/store/modules/comment'
 
 
 
@@ -25,6 +27,7 @@ export default new Vuex.Store({
     detail,
     recommand,
     login,
+    logout,
     comment,
   }
 })

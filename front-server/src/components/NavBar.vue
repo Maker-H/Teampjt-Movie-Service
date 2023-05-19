@@ -7,7 +7,11 @@
         <router-link :to="{name: 'RecommandView'}">Recommand</router-link> |
         <router-link :to="{name: 'SearchView'}">Search</router-link> |
         <router-link :to="{name: 'ProfileView'}">Profile</router-link> |
+        <!-- 로그인 했을 때 -->
+        <button @click="logout">Logout</button>
+        <!-- 로그인 안했을 때 -->
         <router-link :to="{name: 'LoginView'}">Login</router-link>
+        <!-- TODO: signup -->
       </div>
     </nav>
   </div>
@@ -16,6 +20,11 @@
 <script>
 export default {
   name: 'NavBar',
+  methods: {
+    logout() {
+      this.$store.dispatch('logout/logout')
+    }
+  }
 }
 </script>
 
