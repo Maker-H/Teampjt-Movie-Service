@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import home from '@/store/modules/home'
-import detail from '@/store/modules/detail'
-import recommand from '@/store/modules/recommand'
-import comment from '@/store/modules/comment'
+import home from '@/store/modules/movies/home'
+import detail from '@/store/modules/movies/detail'
+import recommand from '@/store/modules/movies/recommand'
+import comment from '@/store/modules/movies/comment'
 
 Vue.use(Vuex)
 
