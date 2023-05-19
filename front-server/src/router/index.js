@@ -7,6 +7,7 @@ import ProfileView from '@/views/ProfileView.vue'
 import CommentView from '@/views/CommentView.vue'
 import DetailView from '@/views/DetailView.vue'
 import LoginView from '@/views/LoginView.vue'
+import SignUpView from '@/views/SignUpView.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/v/login',
     name: 'LoginView',
     component: LoginView
+  },
+  {
+    path: '/v/signup',
+    name: 'SignUpView',
+    component: SignUpView
   },
 ]
 
