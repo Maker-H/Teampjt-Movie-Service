@@ -7,7 +7,7 @@
     </form>
     <form v-else @submit.prevent="updateComment">
           <label for="content">평론 : </label>
-          <textarea id="content" cols="30" rows="10" v-model="updateCommentObject.content"></textarea>
+          <textarea id="content" cols="30" rows="10" v-model.lazy="updateCommentObject.content"></textarea>
           <input type="submit" value="수정">
     </form>
   </div>
