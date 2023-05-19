@@ -1,14 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+// movies
 import home from '@/store/modules/movies/home'
 import detail from '@/store/modules/movies/detail'
 import recommand from '@/store/modules/movies/recommand'
 import comment from '@/store/modules/movies/comment'
+
+// auth
 import login from '@/store/modules/auths/login'
-import refresh from '@/store/modules/auths/refresh'
 import logout from '@/store/modules/auths/logout'
-import comment from '@/store/modules/comment'
+import refresh from '@/store/modules/auths/refresh'
+
+// profile
+import point from '@/store/modules/profile/point'
 
 
 
@@ -24,12 +29,18 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    // movies
     home,
     detail,
     recommand,
+    comment,
+    
+    // auths
     login,
     logout,
-    comment,
     refresh,
+    
+    // profile
+    point,
   }
 })

@@ -13,7 +13,7 @@ from django.conf import settings
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def user_points(request):
+def user_point(request):
     if request.method == 'POST':
         user = get_object_or_404(get_user_model(), pk=request.user.id)
         return Response(user.points, status=status.HTTP_200_OK)
