@@ -14,6 +14,7 @@ import refresh from '@/store/modules/auths/refresh'
 
 // profile
 import point from '@/store/modules/profile/point'
+import likes from '@/store/modules/profile/likes'
 
 
 
@@ -42,5 +43,6 @@ export default new Vuex.Store({
     
     // profile
     point,
+    likes,
   }
 })
