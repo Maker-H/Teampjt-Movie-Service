@@ -10,6 +10,7 @@ import comment from '@/store/modules/movies/comment'
 // auth
 import login from '@/store/modules/auths/login'
 import logout from '@/store/modules/auths/logout'
+import signup from '@/store/modules/auths/signup'
 import refresh from '@/store/modules/auths/refresh'
 
 // profile
@@ -39,6 +40,7 @@ export default new Vuex.Store({
     // auths
     login,
     logout,
+    signup,
     refresh,
     
     // profile
