@@ -22,6 +22,9 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
+# from rest_framework_simplejwt.views import TokenRefreshView
+
+
 
 
 schema_view = get_schema_view( 
@@ -42,6 +45,7 @@ urlpatterns = [
     path('api/', include('movies.urls')),
     path('api/', include('dj_rest_auth.urls')),
     path('api/login/registeration/', include('dj_rest_auth.registration.urls')),
+    # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
 
 urlpatterns += [
