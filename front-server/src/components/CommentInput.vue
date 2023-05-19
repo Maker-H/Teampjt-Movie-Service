@@ -16,6 +16,8 @@ export default {
         content: null,
     }
   },
+  created() {
+  },
   methods: {
     createComment() {
       const content = this.content
@@ -24,8 +26,9 @@ export default {
         alert('내용을 입력해주세요.')
         return
       }
-      const payload = { content, movieId}
-      this.$store.dispatch('createComment', payload)
+      const payload = { content, movieId }
+      this.$store.dispatch('comment/createComment', payload)
+      this.content = null
     }
   }
 }

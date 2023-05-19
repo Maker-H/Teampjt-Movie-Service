@@ -2,6 +2,7 @@
   <div>
     <h1>DetailView</h1> 
     <DetailItem :movie="detailMovie"/>
+    <hr>
     <CommentForm />
   </div>
 </template>

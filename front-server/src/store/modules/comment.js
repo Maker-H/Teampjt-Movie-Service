@@ -1,21 +1,43 @@
 import axios from 'axios'
-import router from 'vue-router'
+// import router from 'vue-router'
 // 
 import { API_URL } from '@/store/CONSTS'
 
 const state = () => {
   return {
-    content: null
+    movieId: null,
+    commentList : []
   }
 }
 
 const getters = {
-
+  commentList: state => state.commentList,
+  movieCommentList(state) {
+    return state.commentList.filter((comment) => {
+      return comment.movie == state.movieId
+    })
+  }
 }
 const mutations = {
-
+  GET_COMMENTLIST(state, commentList){
+    state.commentList = commentList
+  },
+  GET_MOVIE_COMMENTLIST(state, movieId){
+    state.movieId = movieId
+  }
 }
 const actions = {
+  getCommentList(context) {
+    axios({
+      method: 'get',
+      url: `${API_URL}/comments/`
+    })
+    .then((res)=>{
+      // console.log(res)
+      context.commit('GET_COMMENTLIST', res.data)
+    })
+    .catch(err => console.log(err))
+  },
   createComment(context, payload){
     const { content, movieId } = payload
     axios({
@@ -24,7 +46,20 @@ const actions = {
       data: { content }
     })
       .then(() => {
-        router.push({name : 'DetailView'})
+        actions.getCommentList(context)
+      })
+      .catch(err => console.log(err))
+  },
+  getMovieCommentList(context, movieId) {
+    context.commit('GET_MOVIE_COMMENTLIST', movieId)
+  },
+  deleteComment(context, commentId) {
+    axios({
+      method: 'delete',
+      url: `${API_URL}/comments/${commentId}/`
+    })
+      .then(() => {
+        actions.getCommentList(context)
       })
       .catch(err => console.log(err))
   }

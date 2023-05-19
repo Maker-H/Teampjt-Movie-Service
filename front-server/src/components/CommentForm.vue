@@ -1,7 +1,10 @@
 <template>
   <div>
     <p>CommentForm</p>
-    <CommentList /><hr>
+    <hr>
+    <CommentList v-for="comment in movieComments" :key="comment.id"
+    :comment="comment"/>
+    <hr>
     <CommentInput />
   </div>
 </template>
@@ -16,6 +19,21 @@ export default {
     CommentInput,
     CommentList
   },
+  created() {
+    this.getMovieCommentList()
+  },
+  computed: {
+    movieComments() {
+      return this.$store.getters['comment/movieCommentList']
+    },
+  },
+  methods: {
+    getMovieCommentList() {
+      const movieId = this.$route.params.movieId
+      this.$store.dispatch('comment/getCommentList', movieId)
+      this.$store.dispatch('comment/getMovieCommentList', movieId)
+    }
+  }
 }
 </script>
 
