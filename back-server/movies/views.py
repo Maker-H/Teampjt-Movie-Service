@@ -6,6 +6,11 @@ from django.shortcuts import get_object_or_404, get_list_or_404
 from .serializers import MovieListSerializer, MovieSerializer, CommentSerializer, GenreSerializer
 from .models import Movie, Comment, Genre
 
+# permission Decorators
+from rest_framework.decorators import permission_classes, authentication_classes
+from rest_framework.permissions import IsAuthenticated
+
+
 @api_view(['GET'])
 def movie_list(request):
     if request.method == 'GET':
@@ -30,8 +35,9 @@ def comment_list(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-# 로그인
+
 @api_view(['DELETE', 'PUT'])
+@permission_classes([IsAuthenticated])
 def comment_detail(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     
@@ -49,8 +55,9 @@ def comment_detail(request, comment_pk):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
 
-# 로그인
+
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def comment_create(request, movie_pk):
     if request.method == 'POST':
         movie = get_object_or_404(Movie, pk=movie_pk)
@@ -67,8 +74,9 @@ def genre_list(request):
         serializer = GenreSerializer(genres, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-# 로그인
+
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def create_likes(request, movie_pk):
     if request.method == 'POST':
         movie = get_object_or_404(Movie, pk=movie_pk)
@@ -79,12 +87,14 @@ def create_likes(request, movie_pk):
             movie.like_users.add(request.user)
             return Response({'message': 'Movie liked successfully.'}, status=status.HTTP_201_CREATED)
 
-# 로그인
+
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def liked_list(request):
     user = request.user
     liked_movies = user.like_movies.all()
-    return Response(liked_movies, status=status.HTTP_200_OK)
+    serializer = MovieListSerializer(liked_movies, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 
