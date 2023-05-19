@@ -3,7 +3,7 @@ import _ from 'lodash'
 //
 import { weatherParams, weatherDataPreprocessing, weatherToGenre } from '/api/weather'
 // 
-import { API_URL } from '@/store/modules/movies/CONSTS'
+import { API_URL } from '@/store/CONSTS'
 
 const state = () => {
   return {
