@@ -30,15 +30,16 @@ def comment_list(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-@api_view(['GET', 'DELETE', 'PUT'])
+# 로그인
+@api_view(['DELETE', 'PUT'])
 def comment_detail(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     
-    if request.method == 'GET':
-        serializer = CommentSerializer(comment)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+    # if request.method == 'GET':
+    #     serializer = CommentSerializer(comment)
+    #     return Response(serializer.data, status=status.HTTP_200_OK)
     
-    elif request.method == 'DELETE':
+    if request.method == 'DELETE':
         comment.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
@@ -48,7 +49,7 @@ def comment_detail(request, comment_pk):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
 
-
+# 로그인
 @api_view(['POST'])
 def comment_create(request, movie_pk):
     if request.method == 'POST':
@@ -66,7 +67,7 @@ def genre_list(request):
         serializer = GenreSerializer(genres, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
+# 로그인
 @api_view(['POST'])
 def create_likes(request, movie_pk):
     if request.method == 'POST':
@@ -78,7 +79,7 @@ def create_likes(request, movie_pk):
             movie.like_users.add(request.user)
             return Response({'message': 'Movie liked successfully.'}, status=status.HTTP_201_CREATED)
 
-
+# 로그인
 @api_view(['GET'])
 def liked_list(request):
     user = request.user
