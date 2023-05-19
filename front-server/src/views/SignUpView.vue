@@ -10,7 +10,7 @@
 			<label for="password2">비밀번호 재입력: </label>
 			<input type="text" id="password2" v-model="password2">
 			<br>
-			<button>회원가입</button>
+			<button @click="signup">회원가입</button>
 		</form>
 	</div>
 </template>
