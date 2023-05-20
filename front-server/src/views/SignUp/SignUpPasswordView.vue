@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<form @submit.prevent="signup">
+		<form @submit.prevent="signupPwd">
 			<label for="username">username: </label>
 			<input type="text" id="username" v-model="username">
 			<br>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'SignUpView',
+  name: 'SignUpPasswordView',
   data() {
 		return {
 			username: null,
@@ -26,14 +26,14 @@ export default {
 		}
 	},
 	methods: {
-		signup() {
+		signupPwd() {
 			const username = this.username
 			const password1 = this.password1
 			const password2 = this.password2
 			const user = {
 				username, password1, password2
 			}
-			this.$store.dispatch('signup/signup', user)
+			this.$store.dispatch('signup/signupPwd', user)
 		}
 	}
 }

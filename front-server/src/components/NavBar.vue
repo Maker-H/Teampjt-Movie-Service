@@ -12,7 +12,7 @@
         <button @click="logout">Logout</button>
         <!-- 로그인 안했을 때 -->
         <router-link :to="{name: 'LoginView'}">Login</router-link>
-        <router-link :to="{name: 'SignUpView'}">SignUp</router-link>
+        <router-link :to="{name: 'SignUpMessageView'}">SignUp</router-link>
 
       </div>
     </nav>

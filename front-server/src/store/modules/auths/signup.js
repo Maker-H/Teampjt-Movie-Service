@@ -11,7 +11,7 @@ const getters = {
 const mutations = {
 }
 const actions = {
-  signup(context, user) {
+  signupPwd(context, user) {
     const username = user.username
     const password1 = user.password1
     const password2 = user.password2
