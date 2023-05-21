@@ -33,8 +33,8 @@ def send_message(request):
     verification_code = api.generate_verification_code()
 
     if request.method == 'POST':
-        user_number = request.POST.get('userNumber')
-
+        user_number = json.loads(request.body).get('userNumber')
+        print(user_number)
         current_time = api.timestamp()
         headers = {
             'Content-Type': 'application/json; charset=utf-8',
@@ -57,7 +57,7 @@ def send_message(request):
         return HttpResponse(data)
     else:
         data = {
-            f'Error ${response}'
+            f'Error: {response}'
         }
         return HttpResponse(data)
 

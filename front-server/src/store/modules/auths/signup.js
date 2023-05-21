@@ -49,6 +49,7 @@ const actions = {
       }
     })
       .then((res) => {
+        console.log(res.data)
         const verificationCode = res.data
         context.commit('SEND_MESSAGE', verificationCode)
       })
