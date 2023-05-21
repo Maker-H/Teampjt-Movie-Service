@@ -5,9 +5,9 @@
     <form @submit.prevent="getPayment">
       <label for="amount">amount</label>
       <select name="amounts" id="amount" v-model="amountValue">
-        <option value="1000">1,000원</option>
-        <option value="5000">5,000원</option>
-        <option value="10000">10,000원</option>
+        <option value='1000'>1,000원</option>
+        <option value='5000'>5,000원</option>
+        <option value='10000'>10,000원</option>
       </select>
       <input type="submit" value="결제" />
     </form>

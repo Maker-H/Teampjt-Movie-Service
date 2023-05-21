@@ -62,7 +62,6 @@ def send_message(request):
         return HttpResponse(data)
 
 def get_kakaoPay(request, amount):
-
     _admin_key = SECRETE.ADMIN_KEY # 개인 어드민키
     _url = f'https://kapi.kakao.com/v1/payment/ready'
     _headers = {
@@ -88,8 +87,8 @@ def get_kakaoPay(request, amount):
     result = response.json()
     return JsonResponse(result)
 
+@api_view(['POST'])
 def paySuccess(request):
-
     tid = request.GET.get('tid')  # Kakao Pay에서 전달한 'tid' 값을 가져옴
 
     _url = 'https://kapi.kakao.com/v1/payment/approve'
@@ -110,11 +109,13 @@ def paySuccess(request):
     if response.status_code == 200:
         result = response.json()
         # 결제 승인이 성공한 경우
+        # user = get_object_or_404(get_user_model(), pk=request.user.id)
+        # user.points += int(amount)
+        # user.save()
         return JsonResponse(result)
     else:
         # 결제 승인이 실패한 경우
         return JsonResponse({'message': '결제 승인에 실패했습니다.'}, status=500)
-    
 
 
 

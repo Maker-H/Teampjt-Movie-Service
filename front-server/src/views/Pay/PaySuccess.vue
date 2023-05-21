@@ -8,6 +8,15 @@
 <script>
 export default {
   name: 'PaySuccess',
+  created() {
+    this.paySuccess()
+  },
+  methods: {
+    paySuccess(){
+      const pgToken = this.$route.query.pg_token
+      this.$store.dispatch('point/paySuccess', pgToken)
+    }
+  } 
 }
 </script>
 
