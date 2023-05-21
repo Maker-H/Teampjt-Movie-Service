@@ -7,11 +7,18 @@ import { API_URL } from '@/store/CONSTS'
 const state = () => {
   return {
     verificationCode: '',
+    userNumber: '',
   }
 }
 const getters = {
 }
 const mutations = {
+  SEND_MESSAGE(state, verificationCode) {
+    state.verificationCode = verificationCode
+  },
+  STORE_USERNUMBER(state, userNumber) {
+    state.userNumber = userNumber
+  }
 }
 const actions = {
   signupPwd(user) {
@@ -33,7 +40,7 @@ const actions = {
       })
       .catch(err => console.log(err))
   },
-  signupMessage(userNumber) {
+  sendMessage(context, userNumber) {
     axios({
       method: 'post',
       url: `${API_URL}/profile/message/`,
@@ -42,9 +49,13 @@ const actions = {
       }
     })
       .then((res) => {
-        console.log(res.data)
+        const verificationCode = res.data
+        context.commit('SEND_MESSAGE', verificationCode)
       })
       .catch(err => console.log(err))
+  },
+  storeUserNumber(context, userNumber){
+    context.commit('STORE_USERNUMBER', userNumber)
   }
 }
 
