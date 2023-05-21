@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from rest_framework import status
 from rest_framework.response import Response
@@ -60,4 +60,64 @@ def send_message(request):
             f'Error: {response}'
         }
         return HttpResponse(data)
+
+def get_kakaoPay(request, amount):
+
+    _admin_key = SECRETE.ADMIN_KEY # 개인 어드민키
+    _url = f'https://kapi.kakao.com/v1/payment/ready'
+    _headers = {
+        'Authorization': f'KakaoAK {_admin_key}',
+        "Content-type": "application/x-www-form-urlencoded;charset=utf-8", 
+    }
+    _data = {
+        'cid': 'TC0ONETIME',  # 가맹점 코드 (테스트용 코드)
+        'partner_order_id':'partner_order_id', # 주문 번호
+        'partner_user_id':'partner_user_id',   # 유저 아이디
+        'item_name':f'포인트 {amount}',   # 구매 물품 이름
+        'quantity':'1',   # 구매 물품 수량
+        'total_amount': amount, # 구매 물품 가격
+        'vat_amount':'0',  # 구매 물품 비과세
+        'tax_free_amount':'0',
+        # 내 애플리케이션 -> 앱설정 / 플랫폼 - WEB 사이트 도메인에 등록된 정보만 가능
+        # * 등록 : http://127.0.0.1:8000 
+        'approval_url':'http://localhost:8080/v/pay/success', # 결제 성공시 이동  
+        'fail_url':'http://localhost:8080/v/pay/fail',
+        'cancel_url':'http://localhost:8080/v/pay/cancel'
+    }
+    response = requests.post(_url, data=_data, headers=_headers)
+    result = response.json()
+    return JsonResponse(result)
+
+def paySuccess(request):
+
+    tid = request.GET.get('tid')  # Kakao Pay에서 전달한 'tid' 값을 가져옴
+
+    _url = 'https://kapi.kakao.com/v1/payment/approve'
+    _admin_key = SECRETE.ADMIN_KEY # 어드민키
+    _headers = {
+        'Authorization': f'KakaoAK {_admin_key}',
+        "Content-type": "application/x-www-form-urlencoded;charset=utf-8",
+    }
+    _data = {
+        'cid':'TC0ONETIME',
+        'tid': tid,
+        'partner_order_id':'partner_order_id',
+        'partner_user_id':'partner_user_id',
+        'pg_token': request.GET['pg_token'] # 결제 승인을 인증하는 토큰
+    }
+    response = requests.post(_url, data=_data, headers=_headers)
+
+    if response.status_code == 200:
+        result = response.json()
+        # 결제 승인이 성공한 경우
+        return JsonResponse(result)
+    else:
+        # 결제 승인이 실패한 경우
+        return JsonResponse({'message': '결제 승인에 실패했습니다.'}, status=500)
+    
+
+
+
+
+
 

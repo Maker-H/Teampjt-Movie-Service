@@ -62,7 +62,7 @@ const actions = {
   storeUserNumber(context, userNumber){
     context.commit('STORE_USERNUMBER', userNumber)
   },
-  clearVerificationCode() {
+  clearVerificationCode(context) {
     context.commit('CLEAR_VERIFICATION_CODE')
   }
 }

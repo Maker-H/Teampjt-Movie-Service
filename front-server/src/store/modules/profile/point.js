@@ -1,4 +1,5 @@
 import axios from 'axios'
+import router from 'vue-router'
 // 
 import { API_URL } from '@/store/CONSTS'
 // 
@@ -37,6 +38,19 @@ const actions = {
           refresh.actions.token_refresh()
         }
       })
+  },
+  getPayment(context, amount) {
+    axios.get(`/api/profile/kakaoPay/${amount}/`)
+      .then(response => {
+      // Kakao Pay API 응답 처리
+        console.log(response)
+        const paymentUrl = response.data.next_redirect_pc_url;
+        window.location.href = paymentUrl;
+      })
+      .catch(() => {
+        alert("에러가 발생했습니다. 다시 시도해주세요")
+        router.push('/')
+      });
   }
 }
 
