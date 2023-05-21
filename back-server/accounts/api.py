@@ -6,11 +6,13 @@ import base64
 import time
 import random
 
+
 def timestamp():
     current_time = int(time.time() * 1000)
     return str(current_time)
 
 
+# https://api.ncloud-docs.com/docs/common-ncpapi
 def	make_signature(time, access_key, secrete_key, service_id):
 	secrete_key = bytes(secrete_key, 'UTF-8')
 
@@ -24,6 +26,7 @@ def	make_signature(time, access_key, secrete_key, service_id):
 	return signing_key
 
 
+# https://api.ncloud-docs.com/docs/ai-application-service-sens-smsv2#%EB%A9%94%EC%8B%9C%EC%A7%80%EB%B0%9C%EC%86%A1
 def generate_body(user_number, my_number, verification_code):
     body = {
         "type": "SMS",
