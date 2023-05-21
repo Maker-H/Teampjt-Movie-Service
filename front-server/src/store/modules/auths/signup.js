@@ -25,7 +25,7 @@ const mutations = {
 }
 const actions = {
   signupPwd(user) {
-    const username = user.username
+    const username = `P${user.username}`
     const password1 = user.password1
     const password2 = user.password2
     axios({
