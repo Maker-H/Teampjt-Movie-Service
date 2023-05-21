@@ -15,8 +15,6 @@ const getters = {
 const mutations = {
   SEND_MESSAGE(state, verificationCode) {
     state.verificationCode = verificationCode
-    // 2분 후 코드 만료
-    setTimeout(state.commit('CLEAR_VERIFICATION_CODE'), 120000);
   },
   CLEAR_VERIFICATION_CODE(state) {
     state.verificationCode = ''
@@ -63,6 +61,9 @@ const actions = {
   },
   storeUserNumber(context, userNumber){
     context.commit('STORE_USERNUMBER', userNumber)
+  },
+  clearVerificationCode() {
+    context.commit('CLEAR_VERIFICATION_CODE')
   }
 }
 
