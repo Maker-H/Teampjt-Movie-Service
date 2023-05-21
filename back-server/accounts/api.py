@@ -15,7 +15,7 @@ def	make_signature(time, access_key, secrete_key, service_id):
 	secrete_key = bytes(secrete_key, 'UTF-8')
 
 	method = "POST"
-	uri = f'/sms/v2/services/${service_id}/messages'
+	uri = f'/sms/v2/services/{service_id}/messages'
 
 	message = method + " " + uri + "\n" + time + "\n" + access_key
 	message = bytes(message, 'UTF-8')
@@ -30,7 +30,7 @@ def generate_body(user_number, my_number, verification_code):
         "contentType": "COMM",
         "countryCode": "82",
         "from": my_number,
-        "content": f'[Web] 인증번호 ${verification_code}',
+        "content": f'[Web] 인증번호 {verification_code}',
         "messages": [
             {
                 "to": user_number

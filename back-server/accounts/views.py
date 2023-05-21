@@ -40,18 +40,21 @@ def send_message(request):
             'Content-Type': 'application/json; charset=utf-8',
             'x-ncp-apigw-timestamp': current_time,
             'x-ncp-iam-access-key': access_key,
-            'x-ncp-apigw-signature-v2': api.make_signature(current_time, access_key, secrete_key, service_id)
+            'x-ncp-apigw-signature-v2': api.make_signature(time=current_time, access_key=access_key, secrete_key=secrete_key, service_id=service_id)
         }
 
-        body = api.generate_body(user_number, my_number, verification_code)
+        body = api.generate_body(user_number=user_number, my_number=my_number, verification_code=verification_code)
 
         url = f'https://sens.apigw.ntruss.com/sms/v2/services/{service_id}/messages'
         
         response = requests.post(url, headers=headers, data=json.dumps(body))
 
-    if response.status_code == 200:
+    if response.status_code == 202:
         # 난수 반환
-        return HttpResponse(verification_code)
+        data = {
+            f'{verification_code}'
+        }
+        return HttpResponse(data)
     else:
         data = {
             f'Error ${response}'
