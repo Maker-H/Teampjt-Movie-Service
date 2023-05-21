@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// 
 import HomeView from '@/views/HomeView.vue'
 import SearchView from '@/views/SearchView.vue'
 import RecommandView from '@/views/RecommandView.vue'
-import ProfileView from '@/views/ProfileView.vue'
 import CommentView from '@/views/CommentView.vue'
 import DetailView from '@/views/DetailView.vue'
+// 
+import ProfileView from '@/views/ProfileView.vue'
 import LoginView from '@/views/LoginView.vue'
-import SignUpView from '@/views/SignUpView.vue'
+import SignUpPasswordView from '@/views/SignUp/SignUpPasswordView.vue'
+import SignUpMessageView from '@/views/SignUp/SignUpMessageView.vue'
 
 Vue.use(VueRouter)
 
@@ -28,11 +31,6 @@ const routes = [
     component: RecommandView
   },
   {
-    path: '/v/profile',
-    name: 'ProfileView',
-    component: ProfileView
-  },
-  {
     path: '/v/comments',
     name: 'CommentView',
     component: CommentView
@@ -42,6 +40,14 @@ const routes = [
     name: 'DetailView',
     component: DetailView
   },
+
+  // 
+  
+  {
+    path: '/v/profile',
+    name: 'ProfileView',
+    component: ProfileView
+  },
   {
     path: '/v/login',
     name: 'LoginView',
@@ -49,8 +55,13 @@ const routes = [
   },
   {
     path: '/v/signup',
-    name: 'SignUpView',
-    component: SignUpView
+    name: 'SignUpPasswordView',
+    component: SignUpPasswordView
+  },
+  {
+    path: '/v/signup/message',
+    name: 'SignUpMessageView',
+    component: SignUpMessageView
   },
 ]
 

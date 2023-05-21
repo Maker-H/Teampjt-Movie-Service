@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<form @submit.prevent="signup">
+		<form @submit.prevent="signupPwd">
 			<label for="username">username: </label>
-			<input type="text" id="username" v-model="username">
+      <span>{{ username }}</span>
 			<br>
 			<label for="password1">비밀번호: </label>
 			<input type="text" id="password1" v-model="password1">
@@ -10,30 +10,34 @@
 			<label for="password2">비밀번호 재입력: </label>
 			<input type="text" id="password2" v-model="password2">
 			<br>
-			<button @click="signup">회원가입</button>
+			<button @click="signupPwd">회원가입</button>
 		</form>
 	</div>
 </template>
 
 <script>
 export default {
-  name: 'SignUpView',
+  name: 'SignUpPasswordView',
   data() {
 		return {
-			username: null,
 			password1: null,
 			password2: null,
 		}
 	},
+  computed: {
+    username() {
+      return this.$store.state.signup.userNumber
+    }
+  },
 	methods: {
-		signup() {
+		signupPwd() {
 			const username = this.username
 			const password1 = this.password1
 			const password2 = this.password2
 			const user = {
 				username, password1, password2
 			}
-			this.$store.dispatch('signup/signup', user)
+			this.$store.dispatch('signup/signupPwd', user)
 		}
 	}
 }
