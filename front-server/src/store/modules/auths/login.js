@@ -28,6 +28,10 @@ const actions = {
         router.push({name: 'HomeView'}).catch(() => {})
       })
       .catch(err => console.log(err))
+
+    },
+    checkLoggedIn(dispatch) {
+      dispatch('check/checkLoggedIn')
   }
 }
 

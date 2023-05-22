@@ -12,6 +12,7 @@ import login from '@/store/modules/auths/login'
 import logout from '@/store/modules/auths/logout'
 import signup from '@/store/modules/auths/signup'
 import refresh from '@/store/modules/auths/refresh'
+import check from '@/store/modules/auths/check'
 // profile
 import point from '@/store/modules/profile/point'
 import likes from '@/store/modules/profile/likes'
@@ -36,13 +37,14 @@ export default new Vuex.Store({
     detail,
     recommand,
     comment,
-     search,
+    search,
     
     // auths
     login,
     logout,
     signup,
     refresh,
+    check,
     
     // profile
     point,
