@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>DetailView</h1> 
+    <button v-if="!isLiked" @click="createLikedMovies">좋아요</button>
+    <button v-else @click="createLikedMovies">좋아요 취소</button>
+    <hr>
     <DetailItem :movie="detailMovie"/>
     <hr>
     <CommentList :comments="movieComments"/>
@@ -29,15 +32,21 @@ export default {
     created() {
         this.getDetailMovie()
         this.getMovieCommentList()
+        this.getLikedMovie()
     },
     methods: {
         getDetailMovie(){
             this.$store.dispatch('detail/getDetailMovie', this.movieId)
         },
         getMovieCommentList() {
-            const movieId = this.$route.params.movieId
             this.$store.dispatch('comment/getCommentList')
-            this.$store.dispatch('comment/getMovieCommentList', movieId)
+            this.$store.dispatch('comment/getMovieCommentList', this.movieId)
+        },
+        createLikedMovies() {
+            this.$store.dispatch('detail/createLikedMovies', this.movieId)
+        },
+        getLikedMovie() {
+            this.$store.dispatch('detail/getLikedMovie', this.movieId)
         }
     },
     computed: {
@@ -46,6 +55,9 @@ export default {
         },
         movieComments() {
             return this.$store.getters['comment/movieCommentList']
+        },
+        isLiked() {
+            return this.$store.getters['detail/isLiked']
         },
     }
 }
