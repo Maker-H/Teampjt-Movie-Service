@@ -9,7 +9,7 @@
     <span>{{ formatTime }}</span>
     <button @click="verify">인증 완료</button>
     <br>
-    <button v-if="!isVerified" >다음(인증필요)</button>
+    <button v-if="!isVerified" >인증필요</button>
     <button v-else @click="routeToSignUpPassword">다음</button>
   </div>
 </template>
@@ -28,6 +28,9 @@ export default {
     }
   },
   computed: {
+    renewedUserNumber() {
+      return "P" + this.userNumber.toString()
+    },
     formatTime() {
       // Math.floor: 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
       const minutes = Math.floor(this.remainingSeconds / 60)
@@ -45,6 +48,7 @@ export default {
     startTimer() {
       if (this.timer) return; // 이미 타이머가 실행 중인 경우 중복 실행 방지
 
+      this.remainingSeconds = 120
       this.timer = setInterval(() => {
         this.remainingSeconds--;
 
@@ -64,15 +68,17 @@ export default {
     },
     sendMessage() {
       alert('발송되었습니다')
+      // 메세지 보낼때는 실제 번호 사용
       this.$store.dispatch('signup/sendMessage', this.userNumber)
     },
     verify(){
       const verificationCode = this.$store.state.signup.verificationCode
       if(this.userInputCode == verificationCode) {
         alert('인증되었습니다')
-        this.$store.dispatch('signup/storeUserNumber', this.userNumber)
-        
+        // 회원가입할때는 P번호 사용
+        this.$store.dispatch('signup/storeUserNumber', this.renewedUserNumber)
         this.isVerified = true
+        this.routeToSignUpPassword()
       }
       else {
         alert('잘못된 인증번호 입니다 재입력해주세요')

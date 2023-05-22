@@ -11,13 +11,14 @@ const mutations = {
 }
 const actions = {
   login(context, user) {
-    const username = user.username
+    const renewedUsername = user.renewedUsername
     const password = user.password
     axios({
       method: 'post',
       url: `${API_URL}/login/`,
       data: {
-        username, password
+        'username': renewedUsername,
+        password
       }
     })
       .then((res) => {
