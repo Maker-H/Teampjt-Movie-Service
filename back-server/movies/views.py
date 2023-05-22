@@ -82,10 +82,12 @@ def create_likes(request, movie_pk):
         movie = get_object_or_404(Movie, pk=movie_pk)
         if movie.like_users.filter(pk=request.user.pk).exists():
             movie.like_users.remove(request.user)
-            return Response({'message': 'Movie unliked successfully.'}, status=status.HTTP_204_NO_CONTENT)
+            data = False
+            return Response(data, status=status.HTTP_204_NO_CONTENT)
         else:
             movie.like_users.add(request.user)
-            return Response({'message': 'Movie liked successfully.'}, status=status.HTTP_201_CREATED)
+            data = True
+            return Response(data, status=status.HTTP_201_CREATED)
 
 
 @api_view(['POST'])
@@ -97,5 +99,15 @@ def liked_list(request):
         serializer = MovieListSerializer(liked_movies, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def liked_detail_movie(request, movie_pk):
+    if request.method == 'POST':
+        movie = get_object_or_404(Movie, pk=movie_pk)
+        is_liked = False
+        if movie.like_users.filter(pk=request.user.pk).exists():
+            is_liked = True
+        data = is_liked
+        return Response(data, status=status.HTTP_200_OK)
+            
 
