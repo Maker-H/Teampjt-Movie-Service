@@ -6,7 +6,7 @@ import refresh from '@/store/modules/auths/refresh'
 
 const state = () => {
   return {
-    likedMovies: []
+    likedMovies: [],
   }
 }
 const getters = {
@@ -14,7 +14,7 @@ const getters = {
 const mutations = {
   GET_LIKED_MOVIES(state, movies) {
     state.likedMovies = movies
-  }
+  },
 }
 const actions = {
   getLikedMovies(context) {
@@ -34,7 +34,7 @@ const actions = {
           refresh.actions.token_refresh()
         }
       })
-  }
+  },
 }
 
 export default {

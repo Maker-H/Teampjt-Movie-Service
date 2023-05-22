@@ -6,7 +6,7 @@ const weatherParams = () => {
     // 날짜, 시간, 좌표를 Query String으로 구성해 payload 완성
     const today = new Date();
     const baseDate = today.getFullYear() + ('0' + (today.getMonth() + 1)).slice(-2) + ('0' + today.getDate()).slice(-2);
-    const baseTime = '0900';
+    const baseTime = '0800';
     const nx = '86';
     const ny = '95';
 

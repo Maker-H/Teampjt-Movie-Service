@@ -1,6 +1,7 @@
 <template>
   
   <div
+    @click="moveDetail(movie.id)"
     id="movie-card" 
     class="card mb-3 mx-auto" 
     style="width: 18rem;"
@@ -38,6 +39,11 @@ export default {
     },
     movieOverview() {
       return this.movie.overview.slice(0, 100)
+    }
+  },
+  methods: {
+    moveDetail(movieId){
+      this.$router.push({name: 'DetailView', params: {movieId : movieId}})
     }
   }
 }

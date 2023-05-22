@@ -9,7 +9,7 @@
 export default {
     name: 'DetailItem',
     props: {
-        movie : Object
+        movie: Object,
     },
 }
 </script>
