@@ -59,7 +59,7 @@ const actions = {
   },
   getWeather(context) {
     const { vilageWeatherUrl, payload } = weatherParams();
-
+    
     axios
       .get(vilageWeatherUrl + payload)
       .then((res) => {
