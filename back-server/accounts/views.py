@@ -22,6 +22,15 @@ def user_point(request):
     if request.method == 'POST':
         user = get_object_or_404(get_user_model(), pk=request.user.id)
         return Response(user.points, status=status.HTTP_200_OK)
+    
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_user_point(request, amount):
+    if request.method == 'POST':
+        user = get_object_or_404(get_user_model(), pk=request.user.id)
+        user.points += int(amount)
+        user.save()
+        return Response(user.points, status=status.HTTP_200_OK)
 
 
 @api_view(['POST'])
@@ -88,9 +97,7 @@ def get_kakaoPay(request, amount):
     return JsonResponse(result)
 
 @api_view(['POST'])
-def paySuccess(request):
-    tid = request.GET.get('tid')  # Kakao Pay에서 전달한 'tid' 값을 가져옴
-
+def paySuccess(request, pg_token, tid):
     _url = 'https://kapi.kakao.com/v1/payment/approve'
     _admin_key = SECRETE.ADMIN_KEY # 어드민키
     _headers = {
@@ -102,20 +109,12 @@ def paySuccess(request):
         'tid': tid,
         'partner_order_id':'partner_order_id',
         'partner_user_id':'partner_user_id',
-        'pg_token': request.GET['pg_token'] # 결제 승인을 인증하는 토큰
+        'pg_token': pg_token # 결제 승인을 인증하는 토큰
     }
     response = requests.post(_url, data=_data, headers=_headers)
+    result = response.json()
+    return JsonResponse(result)
 
-    if response.status_code == 200:
-        result = response.json()
-        # 결제 승인이 성공한 경우
-        # user = get_object_or_404(get_user_model(), pk=request.user.id)
-        # user.points += int(amount)
-        # user.save()
-        return JsonResponse(result)
-    else:
-        # 결제 승인이 실패한 경우
-        return JsonResponse({'message': '결제 승인에 실패했습니다.'}, status=500)
 
 
 

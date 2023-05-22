@@ -1,5 +1,6 @@
 import axios from 'axios'
 import router from 'vue-router'
+import VueCookies from 'vue-cookies'
 // 
 import { API_URL } from '@/store/CONSTS'
 // 
@@ -11,6 +12,7 @@ const state = () => {
   }
 }
 const getters = {
+  userPoint: (state) => state.userPoint
 }
 const mutations = {
   GET_USER_POINT(state, point){
@@ -30,7 +32,27 @@ const actions = {
     })
       .then((res) => {
         context.commit('GET_USER_POINT', res.data)
+        console.log(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+        if (err.response.status === 401) {
+          refresh.actions.token_refresh()
+        }
+      })
+  },
+  updateUserPoint(context, amount) {
+    const access = JSON.parse(localStorage.getItem('access'))
+    axios({
+      method: 'post',
+      url: `${API_URL}/profile/point/${amount}/`,
+      headers: {
+        'Authorization': `Bearer ${access}`,
+      }
+    })
+      .then((res) => {
         // console.log(res.data)
+        context.commit('GET_USER_POINT', res.data)
       })
       .catch((err) => {
         console.log(err)
@@ -44,6 +66,7 @@ const actions = {
       .then(response => {
       // Kakao Pay API 응답 처리
         console.log(response)
+        VueCookies.set('kakaoTid', response.data.tid)
         const paymentUrl = response.data.next_redirect_pc_url
         window.open(paymentUrl)
       })
@@ -52,24 +75,21 @@ const actions = {
         router.push('/')
       })
   },
-  paySuccess(context, pgToken){
+  paySuccess(context, payload){
       // 결제 승인 API 호출 (Django 뷰의 kakao_pay_approval과 매칭)
-      axios
-        .post(`${API_URL}/profile/paySuccess/`, { pg_token: pgToken })
+      const {pgToken, tid} = payload
+      axios({
+        method: 'post',
+        url: `${API_URL}/profile/paySuccess/${pgToken}/${tid}/`,
+      })
         .then(response => {
-          if (response.data.code === 0) {
-            // 결제 승인 성공 시
-            alert("결제가 완료되었습니다.")
-            console.log(response)
-            // 페이지 리로드 또는 필요한 작업 수행
-          } else {
-            // 결제 승인 실패 시
-            alert("결제가 실패하였습니다.")
-            // 필요한 에러 처리 작업 수행
-          }
+          // console.log('paySuccess', response.data.amount['total'])
+          const amount = response.data.amount['total']
+          actions.updateUserPoint(context, amount)
         })
-        .catch(error => {
-          console.error(error)
+        .catch(() => {
+          alert("에러가 발생했습니다. 다시 시도해주세요")
+          router.push('/')
         })
   },
 }
