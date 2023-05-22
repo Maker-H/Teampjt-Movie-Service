@@ -23,10 +23,10 @@ export default {
 	},
 	methods: {
 		login() {
-			const username = this.username
+			const renewedUsername = "P" + this.username
 			const password = this.password
 			const user = {
-				username, password
+				renewedUsername, password
 			}
 			this.$store.dispatch('login/login', user)
 		}

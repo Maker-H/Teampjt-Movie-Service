@@ -7,7 +7,7 @@ import { API_URL } from '@/store/CONSTS'
 const state = () => {
   return {
     verificationCode: '',
-    userNumber: '',
+    renewedUserNumber: '',
   }
 }
 const getters = {
@@ -19,20 +19,22 @@ const mutations = {
   CLEAR_VERIFICATION_CODE(state) {
     state.verificationCode = ''
   },
-  STORE_USERNUMBER(state, userNumber) {
-    state.userNumber = userNumber
+  STORE_USERNUMBER(state, renewedUserNumber) {
+    state.renewedUserNumber = renewedUserNumber
   }
 }
 const actions = {
-  signupPwd(user) {
-    const username = `P${user.username}`
+  signupPwd(context, user) {
+    const renewedUserNumber = user.renewedUserNumber
     const password1 = user.password1
     const password2 = user.password2
+    console.log(user.renewedUserNumber)
     axios({
       method: 'post',
       url: `${API_URL}/login/registeration/`,
       data: {
-        username, password1, password2
+        'username': renewedUserNumber,
+        password1, password2
       }
     })
       .then((res) => {
@@ -52,17 +54,17 @@ const actions = {
       }
     })
       .then((res) => {
-        // console.log(res.data)
+        console.log(res.data)
         
         const verificationCode = res.data
         context.commit('SEND_MESSAGE', verificationCode)
       })
       .catch(err => console.log(err))
   },
-  storeUserNumber(context, userNumber){
-    context.commit('STORE_USERNUMBER', userNumber)
+  storeUserNumber(context, renewedUserNumber){
+    context.commit('STORE_USERNUMBER', renewedUserNumber)
   },
-  clearVerificationCode() {
+  clearVerificationCode(context) {
     context.commit('CLEAR_VERIFICATION_CODE')
   }
 }

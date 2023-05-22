@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<form @submit.prevent="signupPwd">
+		<form @submit.prevent="">
 			<label for="username">username: </label>
-      <span>{{ username }}</span>
+      <span>{{ userNumber }}</span>
 			<br>
 			<label for="password1">비밀번호: </label>
 			<input type="text" id="password1" v-model="password1">
@@ -24,18 +24,23 @@ export default {
 			password2: null,
 		}
 	},
+  created() {
+    this.userNumber
+  },
   computed: {
-    username() {
-      return this.$store.state.signup.userNumber
+    userNumber() {
+      return this.$store.state.signup.renewedUserNumber
     }
   },
 	methods: {
 		signupPwd() {
-			const username = this.username
+      const renewedUserNumber = this.$store.state.signup.renewedUserNumber
+      // console.log(renewedUserNumber)
 			const password1 = this.password1
 			const password2 = this.password2
 			const user = {
-				username, password1, password2
+				'renewedUserNumber': renewedUserNumber
+        , password1, password2
 			}
 			this.$store.dispatch('signup/signupPwd', user)
 		}
