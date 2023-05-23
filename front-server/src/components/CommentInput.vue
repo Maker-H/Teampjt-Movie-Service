@@ -1,14 +1,26 @@
 <template>
   <div>
     <form v-if="!updateCommentObject" @submit.prevent="createComment">
-          <label for="content">평론 : </label>
-          <textarea id="content" cols="30" rows="10" v-model="content"></textarea>
-          <input type="submit" value="등록">
+      <label class="text-white p-3" style="margin-right:20px;" for="content">본 영화에 대한 한 줄 평론을 작성해주세요.</label>
+      <div class="d-flex justify-content-center">
+        <div class="p-3">
+          <textarea class="form-control" id="content" cols="40" rows="5" v-model="content" placeholder="본 영화에 대한 한 줄 평론을 작성해주세요."></textarea>
+        </div>
+        <div style="margin-top:115px; margin-left:10px">
+          <input class="btn btn-light" type="submit" value="등록">
+        </div>
+      </div>
     </form>
     <form v-else @submit.prevent="updateComment">
-          <label for="content">평론 : </label>
-          <textarea id="content" cols="30" rows="10" v-model.lazy="updateCommentObject.content"></textarea>
-          <input type="submit" value="수정">
+      <label class="text-white p-3" style="margin-right:20px;" for="content">본 영화에 대한 한 줄 평론을 작성해주세요.</label>
+      <div class="d-flex justify-content-center">
+        <div class="p-3">
+          <textarea class="form-control" id="content" cols="40" rows="5" v-model.lazy="updateCommentObject.content"></textarea>
+        </div>
+        <div style="margin-top:115px; margin-left:10px">
+          <input class="btn btn-light" type="submit" value="수정">
+        </div>
+      </div>
     </form>
   </div>
 </template>

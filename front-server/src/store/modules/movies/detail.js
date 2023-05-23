@@ -9,11 +9,25 @@ const state = () => {
   return {
     detailMovie: [],
     isLiked: null,
+    genres: [],
+    detailGenreList: [],
   };
 };
 const getters = {
   detailMovie: (state) => state.detailMovie,
   isLiked : state => state.isLiked,
+  genres: (state) => state.genres,
+  detailGenres(state) {
+    state.detailGenreList = []
+    state.genres.forEach(genre1 => {
+      state.detailMovie.genres.forEach(genre2 => {
+        if (genre1.id === genre2){
+          state.detailGenreList.push(genre1.name)
+        }
+      })       
+    })
+    return state.detailGenreList
+  }
 };
 const mutations = {
   GET_DETAIL_MOVIE(state, movie) {
@@ -21,6 +35,9 @@ const mutations = {
   },
   CREATE_LIKED_MOVIES(state, isLiked){
     state.isLiked = isLiked
+  },
+  GET_GENRELIST(state, genres) {
+    state.genres = genres;
   },
 };
 const actions = {
@@ -70,7 +87,17 @@ const actions = {
           refresh.actions.token_refresh()
         }
       })
-  }
+  },
+  getGenreList(context) {
+    axios({
+      methods: "get",
+      url: `${API_URL}/genres/`,
+    })
+      .then((res) => {
+        context.commit("GET_GENRELIST", res.data);
+      })
+      .catch((err) => console.log(err));
+  },
 };
 
 export default {
