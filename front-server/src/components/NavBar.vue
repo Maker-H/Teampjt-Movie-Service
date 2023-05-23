@@ -72,6 +72,7 @@ export default {
   methods: {
     logout() {
       this.$store.dispatch('logout/logout')
+      this.$store.dispatch('check/checkLoggedIn')
       const currentPath = this.$route.path
       const newPath = '/v'
 

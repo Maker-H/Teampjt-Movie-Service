@@ -1,16 +1,23 @@
 <template>
   <div>
-    <label for="phonenumber">phonenumber: </label>
-    <input type="text" id="phonenumber" v-model="userNumber">
-    <button @click="startVerify">인증하기</button>
-    <br>
-    <label for="userInputCode">인증 번호: </label>
-    <input type="text" id="userInputCode" v-model="userInputCode">
-    <span>{{ formatTime }}</span>
-    <button @click="verify">인증 완료</button>
-    <br>
-    <button v-if="!isVerified" >인증필요</button>
-    <button v-else @click="routeToSignUpPassword">다음</button>
+    <div id="signup-header">
+      <img src="../../../public/images/이모티콘.png" alt="">
+      <h1 class="h3 mb-3 fw-normal color-white font-monospace" id="login-header">Please Verify</h1>
+    </div>
+
+    <div>
+      <label for="phonenumber">phonenumber: </label>
+      <input type="text" id="phonenumber" v-model="userNumber">
+      <button @click="startVerify">인증하기</button>
+      <br>
+      <label for="userInputCode">인증 번호: </label>
+      <input type="text" id="userInputCode" v-model="userInputCode">
+      <span>{{ formatTime }}</span>
+      <button @click="verify">인증 완료</button>
+      <br>
+      <button v-if="!isVerified" >인증필요</button>
+      <button v-else @click="routeToSignUpPassword">다음</button>
+    </div>
   </div>
 </template>
 
@@ -94,6 +101,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#signup-header {
+  margin-top: 70px;
+}
 
+.color-white {
+  color: white;
+}
 </style>

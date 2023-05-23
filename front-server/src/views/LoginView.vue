@@ -2,7 +2,7 @@
 	<div id="login-total">
     <div id="login-header">
 			<img src="../../public/images/이모티콘.png" alt="">
-      <h1 class="h3 mb-3 fw-normal color-white font-monospace" id="login-header">Please sign in</h1>
+      <h1 class="h3 mb-3 fw-normal color-white font-monospace" id="login-header">Please Login in</h1>
     </div>
 		<form @submit.prevent="" class="form-signin" id="login-form">
 			<label for="username" class="visually-hidden">Phone Number </label>
