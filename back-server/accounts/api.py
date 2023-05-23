@@ -33,7 +33,7 @@ def generate_body(user_number, my_number, verification_code):
         "contentType": "COMM",
         "countryCode": "82",
         "from": my_number,
-        "content": f'[Web] 인증번호 {verification_code}',
+        "content": f'인증번호 {verification_code}',
         "messages": [
             {
                 "to": user_number
