@@ -9,20 +9,12 @@
     <img :src="poster" class="card-img-top" alt="...">
 
       <!-- 홈인 경우 내용을 안보이게 한다 -->
-    <div v-if="$route.path !== '/v'">
+    <!-- <div v-if="$route.path !== '/v'">
       <div class="card-body">
         <p class="card-text">{{ movie.title }}</p>
         <p class="card-text">{{ movieOverview }}</p>
       </div>
-    </div>
-
-      <!-- 홈인 경우 내용을 안보이게 한다 -->
-    <div v-if="$route.path !== '/v'">
-      <div class="card-body">
-        <p class="card-text">{{ movie.title }}</p>
-        <p class="card-text">{{ movieOverview }}</p>
-      </div>
-    </div>
+    </div> -->
 
   </div>
 </template>

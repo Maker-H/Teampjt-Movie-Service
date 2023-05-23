@@ -1,10 +1,11 @@
 <template>
-  <div class="col row row-cols-5 row-cols-xl-5">
-    <div 
-      v-for="(movie, idx) in movies"
-      :key="idx"
-    >
-      <MovieCard :movie="movie"/>
+  <div>
+    <div class="col row row-cols-5 row-cols-xl-5">
+      <div 
+        v-for="(movie, idx) in movies"
+        :key="idx">
+        <MovieCard :movie="movie"/>
+      </div>
     </div>
   </div>
 </template>
