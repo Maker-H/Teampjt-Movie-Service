@@ -48,9 +48,9 @@ const actions = {
       url: `${API_URL}/movies/${movieId}/`,
     })
       .then((res) => {
-        context.commit("GET_DETAIL_MOVIE", res.data);
+        context.commit("GET_DETAIL_MOVIE", res.data)
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
   },
   createLikedMovies(context, movieId) {
     const access = JSON.parse(localStorage.getItem('access'))
@@ -67,6 +67,7 @@ const actions = {
       .catch((err) => {
         if (err.response.status === 401) {
           refresh.actions.token_refresh()
+          context.dispatch('createLikedMovies', movieId)
         }
       })
   },
@@ -85,6 +86,7 @@ const actions = {
       .catch((err) => {
         if (err.response.status === 401) {
           refresh.actions.token_refresh()
+          context.dispatch('getLikedMovie', movieId)
         }
       })
   },
@@ -96,7 +98,7 @@ const actions = {
       .then((res) => {
         context.commit("GET_GENRELIST", res.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
   },
 };
 

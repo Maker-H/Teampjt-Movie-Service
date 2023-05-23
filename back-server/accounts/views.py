@@ -22,7 +22,8 @@ def user_point(request):
     if request.method == 'POST':
         user = get_object_or_404(get_user_model(), pk=request.user.id)
         return Response(user.points, status=status.HTTP_200_OK)
-    
+
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def update_user_point(request, amount):
@@ -70,6 +71,7 @@ def send_message(request):
         }
         return HttpResponse(data)
 
+
 def get_kakaoPay(request, amount):
     _admin_key = SECRETE.ADMIN_KEY # 개인 어드민키
     _url = f'https://kapi.kakao.com/v1/payment/ready'
@@ -95,6 +97,7 @@ def get_kakaoPay(request, amount):
     response = requests.post(_url, data=_data, headers=_headers)
     result = response.json()
     return JsonResponse(result)
+
 
 @api_view(['POST'])
 def paySuccess(request, pg_token, tid):

@@ -1,12 +1,12 @@
 <template>
   <div style="margin-top: 50px">
     <div class="d-flex justify-content-center align-items-center">
-        <div>
-            <h1 class="text-white"><b>{{detailMovie.title}}</b></h1>
-        </div>
+      <div>
+        <h1 class="text-white"><b>{{detailMovie.title}}</b></h1>
+      </div>
         <div style="margin-left: 30px">
-            <i v-if="!isLiked" @click="createLikedMovies" class="fa-regular fa-heart fa-2xl" style="color: #d90d0d;"></i>
-            <i v-else @click="createLikedMovies" class="fa-solid fa-heart fa-2xl" style="color: #d90d0d;"></i>
+          <i v-if="!isLiked" @click="createLikedMovies" class="fa-regular fa-heart fa-2xl" style="color: #d90d0d;"></i>
+          <i v-else @click="createLikedMovies" class="fa-solid fa-heart fa-2xl" style="color: #d90d0d;"></i>
         </div>
     </div>
     <hr>

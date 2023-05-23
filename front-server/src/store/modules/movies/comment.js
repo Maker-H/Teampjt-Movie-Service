@@ -1,6 +1,7 @@
 import axios from "axios";
 // 
 import { API_URL } from '@/store/CONSTS'
+import refresh from '@/store/modules/auths/refresh'
 
 const state = () => {
   return {
@@ -16,9 +17,9 @@ const getters = {
   movieCommentList(state) {
     return state.commentList.filter((comment) => {
       return comment.movie == state.movieId;
-    });
+    })
   },
-};
+}
 const mutations = {
   GET_COMMENTLIST(state, commentList) {
     state.commentList = commentList;
@@ -44,7 +45,7 @@ const actions = {
         // console.log(res)
         context.commit("GET_COMMENTLIST", res.data);
       })
-      .catch((err) => console.log(err));
+      .catch(err => console.log(err)) 
   },
 
   createComment(context, payload) {
@@ -61,7 +62,12 @@ const actions = {
       .then(() => {
         actions.getCommentList(context);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        if (err.response.status === 401) {
+          refresh.actions.token_refresh()
+          context.dispatch('createComment', payload)
+        }
+      })
   },
 
   getMovieCommentList(context, movieId) {
@@ -80,7 +86,12 @@ const actions = {
       .then(() => {
         actions.getCommentList(context);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        if (err.response.status === 401) {
+          refresh.actions.token_refresh()
+          context.dispatch('deleteComment', commentId)
+        }
+      })
   },
 
   addUpdateComment(context, commentId) {
@@ -102,7 +113,12 @@ const actions = {
         actions.getCommentList(context);
         context.commit("DELETE_UPDATE_COMMENT");
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        if (err.response.status === 401) {
+          refresh.actions.token_refresh()
+          context.dispatch('updateComment')
+        }
+      })
   },
 };
 

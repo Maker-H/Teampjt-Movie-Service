@@ -2,7 +2,7 @@ import axios from 'axios'
 // 
 import router from '@/router'
 import { API_URL } from '@/store/CONSTS'
-
+import store from '@/store'
 
 const state = () => {
   return {
@@ -28,7 +28,7 @@ const actions = {
     const renewedUserNumber = user.renewedUserNumber
     const password1 = user.password1
     const password2 = user.password2
-    console.log(user.renewedUserNumber)
+    // console.log(user.renewedUserNumber)
     axios({
       method: 'post',
       url: `${API_URL}/login/registeration/`,
@@ -42,6 +42,7 @@ const actions = {
         localStorage.setItem('access', JSON.stringify(res.data.access))
         localStorage.setItem('refresh', JSON.stringify(res.data.refresh))
         router.push({name: 'HomeView'}).catch(() => {})
+        store.dispatch('check/checkLoggedIn', {root: true})
       })
       .catch(err => console.log(err))
   },
