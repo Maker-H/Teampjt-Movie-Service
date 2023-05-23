@@ -22,7 +22,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+<<<<<<< HEAD
   min-width: 1005px;
+=======
+} 
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #111;
+	color: #707070;
+>>>>>>> 141998c39d85adcaff979895bca19c94c7c88002
 }
 
 nav {

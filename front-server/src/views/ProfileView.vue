@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Profile</h1>
-    <ProfilePoint />
+    <ProfilePoint/>
     <MovieItemList :movies="likedMovies"/>
     <!-- TODO: pay로 넘어가는 라우터 만들기 -->
   </div>
@@ -26,12 +26,12 @@ export default {
     },
     getNewToken() {
       this.$store.dispatch('refresh/token_refresh')
-    }
+    },
   },
   computed: {
     likedMovies() {
       return this.$store.state.likes.likedMovies
-    }
+    },
   }
 }
 </script>
