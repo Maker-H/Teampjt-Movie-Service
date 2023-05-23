@@ -1,7 +1,7 @@
 <template>
   <div>
     <form v-if="!updateCommentObject" @submit.prevent="createComment">
-      <label class="text-white p-3" style="margin-right:20px;" for="content">본 영화에 대한 한 줄 평론을 작성해주세요.</label>
+      <label class="text-white p-3" style="margin-right:20px;" for="content"><b>본 영화에 대한 한 줄 평론을 작성해주세요.</b></label>
       <div class="d-flex justify-content-center">
         <div class="p-3">
           <textarea class="form-control" id="content" cols="40" rows="5" v-model="content" placeholder="본 영화에 대한 한 줄 평론을 작성해주세요."></textarea>
@@ -12,7 +12,7 @@
       </div>
     </form>
     <form v-else @submit.prevent="updateComment">
-      <label class="text-white p-3" style="margin-right:20px;" for="content">본 영화에 대한 한 줄 평론을 작성해주세요.</label>
+      <label class="text-white p-3" style="margin-right:20px;" for="content"><b>본 영화에 대한 한 줄 평론을 작성해주세요.</b></label>
       <div class="d-flex justify-content-center">
         <div class="p-3">
           <textarea class="form-control" id="content" cols="40" rows="5" v-model.lazy="updateCommentObject.content"></textarea>

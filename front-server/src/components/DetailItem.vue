@@ -7,11 +7,11 @@
           <img :src="poster" class="detail-img" alt="...">
         </div>
         <div class="text-white p-3" style="margin-left: 100px; margin-top: 30px">
-          <p v-if="movie.overview">줄거리: {{movie.overview}}</p>
+          <p v-if="movie.overview"><b>줄거리</b> : {{movie.overview}}</p>
           <p v-else>줄거리 : 줄거리가 생략되었습니다.</p>
-          <p>개봉일 : {{movie.released_date}}</p>
-          <p>평점 : {{movie.vote_avg}}</p>
-          <p>장르 : <span v-for="(genre, genreIdx) in genres" :key="genreIdx"> {{genre}} </span></p>
+          <p><b>개봉일</b> : {{movie.released_date}}</p>
+          <p><b>평점</b> : {{movie.vote_avg}}</p>
+          <p><b>장르</b> : <span v-for="(genre, genreIdx) in genres" :key="genreIdx"> {{genre}} </span></p>
         </div>
       </div>
     </div>

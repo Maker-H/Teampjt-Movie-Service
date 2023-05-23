@@ -10,7 +10,7 @@
     </div>
     <div v-else>
       <div>
-        <h4 class="text-white p-3">한 줄 평론 모아보기</h4>
+        <h4 class="text-white p-3"><b>한 줄 평론 모아보기</b></h4>
       </div>
       <div class="d-flex flex-column justify-content-center">
         <div class="p-2 text-white" v-for="comment in comments" :key="comment.id">
