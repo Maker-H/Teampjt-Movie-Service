@@ -14,7 +14,7 @@
 			<label for="password" class="visually-hidden">Password </label>
 			<input type="text" id="password" class="form-control" placeholder="비밀번호" required v-model="password">
 			<br>
-			<button class="w-100 btn btn-lg btn-warning fw-bold text-muted font-monospace" @click="login">Login</button>
+			<button class="w-100 btn btn-lg btn-warning fw-bold text-muted font-monospace fs-4" @click="login">Login</button>
 		</form>
 
 	</div>
