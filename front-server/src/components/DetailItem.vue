@@ -40,7 +40,7 @@ export default {
         return this.$store.getters['detail/genres']
       },
       genres() {
-        console.log('genres', this.$store.getters['detail/detailGenres'])
+        // console.log('genres', this.$store.getters['detail/detailGenres'])
         return this.$store.getters['detail/detailGenres']
       },
     }
