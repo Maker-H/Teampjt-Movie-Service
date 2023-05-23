@@ -11,6 +11,8 @@ const state = () => {
     genres: [],
     weatherData: {},
     recommandGenre: "",
+    recommandGenreList: [],
+    recommand: {}
   };
 };
 const getters = {
@@ -19,14 +21,27 @@ const getters = {
   recommandGenre: (state) => state.recommandGenre,
   recommandMovie(state) {
     const recommandMovieList = weatherToGenre(state);
-    return _.sample(recommandMovieList);
+    state.recommand = _.sample(recommandMovieList)
+    const recommand = state.recommand
+    return recommand;
   },
   genres: (state) => state.genres,
+  recommandGenres(state) {
+    state.recommandGenreList = []
+    state.genres.forEach(genre1 => {
+      state.recommand.genres.forEach(genre2 => {
+        if (genre1.id === genre2){
+          state.recommandGenreList.push(genre1.name)
+        }
+      })       
+    })
+    return state.recommandGenreList
+  }
 };
 const mutations = {
   GET_MOVIELIST(state, movies) {
     state.movies = movies;
-    console.log(state.movies);
+    // console.log(state.movies);
   },
   GET_GENRELIST(state, genres) {
     state.genres = genres;
@@ -34,7 +49,7 @@ const mutations = {
   },
   GET_WEATHER(state, data) {
     state.weatherData = data;
-    console.log(state.weatherData);
+    // console.log(state.weatherData);
   },
 };
 const actions = {
