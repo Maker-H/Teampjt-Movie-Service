@@ -4,6 +4,8 @@ import _ from "lodash";
 import { weatherParams, weatherDataPreprocessing, weatherToGenre } from '/api/weather'
 // 
 import { API_URL } from '@/store/CONSTS'
+// 
+import refresh from '@/store/modules/auths/refresh'
 
 const state = () => {
   return {
@@ -12,13 +14,15 @@ const state = () => {
     weatherData: {},
     recommandGenre: "",
     recommandGenreList: [],
-    recommand: {}
+    recommand: {},
+    userPoint: 0,
   };
 };
 const getters = {
   state: (state) => state.weatherData.state,
   temperature: (state) => state.weatherData.tmp,
   recommandGenre: (state) => state.recommandGenre,
+  userPoint: (state) => state.userPoint,
   recommandMovie(state) {
     const recommandMovieList = weatherToGenre(state);
     state.recommand = _.sample(recommandMovieList)
@@ -51,6 +55,9 @@ const mutations = {
     state.weatherData = data;
     // console.log(state.weatherData);
   },
+  GET_USER_POINT(state, point){
+    state.userPoint = point
+  }
 };
 const actions = {
   getMovieList(context) {
@@ -84,6 +91,26 @@ const actions = {
       })
       .catch((err) => console.log(err));
   },
+  useUserPoint(context) {
+    const access = JSON.parse(localStorage.getItem('access'))
+    axios({
+      method: 'post',
+      url: `${API_URL}/profile/point/use/${100}/`,
+      headers: {
+        'Authorization': `Bearer ${access}`,
+      }
+    })
+      .then((res) => {
+        // console.log(res.data)
+        context.commit('GET_USER_POINT', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+        if (err.response.status === 401) {
+          refresh.actions.token_refresh()
+        }
+      })
+  }
 };
 
 export default {

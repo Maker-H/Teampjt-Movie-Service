@@ -39,6 +39,7 @@ export default {
     getPayment(){
       const amount = this.amountValue
       this.$store.dispatch('point/getPayment', amount)
+      this.$router.push({name : 'RecommandView'})
     },
   },
   computed: {
