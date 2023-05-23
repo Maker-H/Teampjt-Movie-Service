@@ -7,30 +7,35 @@
       </router-link>
 
       <!-- 오른쪽 상단 -->
-      <div class="position-absolute" id="login-nav" @click="checkLoggedIn">
-        <router-link class=" btn-login text-decoration-none" v-show="isLoggedIn" :to="{name: 'ProfileView'}">
-          <i class="fa-duotone fa-square-user fa-lg"></i>
-        </router-link>  
-        <button v-show="isLoggedIn" @click="logout">
-          <i class="fa-solid fa-person-through-window fa-lg"></i>
+      <!-- 로그아웃 -->
+      <div class="position-absolute" id="login-nav">
+        <button class="btn btn-login"  v-if="isLoggedIn" @click="logout">
+          <i class="fa-solid fa-door-open fa-2xl" style="color: #ffffff;"></i>
         </button>
+        <router-link class=" btn-login text-decoration-none" v-if="isLoggedIn" :to="{name: 'ProfileView'}">
+          <i class="fa-solid fa-id-card-clip fa-2xl" style="color: #ffffff;"></i>
+        </router-link>  
 
-        <button class="btn btn-login">
-          <router-link class="text-decoration-none " v-show="isLoggedOut" :to="{name: 'LoginView'}">
-            <i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #000000;"></i>
+
+        <!-- 로그인 -->
+        <button class="btn btn-login" v-if="isLoggedOut">
+          <router-link class="text-decoration-none "  :to="{name: 'LoginView'}">
+            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ffffff;"></i>
           </router-link> 
         </button>
-        <router-link class="text-decoration-none" v-show="isLoggedOut" :to="{name: 'SignUpMessageView'}">
-          <i class="fa-sharp fa-solid fa-user-plus fa-lg" style="color: #000000;"></i>
+        <router-link class="text-decoration-none" v-if="isLoggedOut" :to="{name: 'SignUpMessageView'}">
+          <i class="fa-sharp fa-solid fa-user-plus fa-2xl" style="color: #ffffff;"></i>
         </router-link> 
       </div>
       <!-- 오른쪽 상단 -->
     </div>
 
-    <nav class="navbar navbar-light" id="mainNav">
-      <div class="container ">
-        <router-link class="text-decoration-none" :to="{name: 'HomeView'}">Home</router-link> 
+    <nav class="navbar navbar-light" id="main-nav">
+      <div class="container-xl">
+        <router-link class="text-decoration-none" :to="{name: 'HomeView'}">Home</router-link>
+        <div class="text-decoration-none">|</div>
         <router-link class="text-decoration-none" :to="{name: 'CommentView'}">Comment</router-link> 
+        <div class="text-decoration-none">|</div>
         <router-link class="text-decoration-none" :to="{name: 'RecommandView'}">Recommand</router-link> 
 
 
@@ -65,12 +70,14 @@ export default {
     }
   },
   methods: {
-    checkLoggedIn() {
-      this.$store.dispatch('check/checkLoggedIn')
-    },
     logout() {
       this.$store.dispatch('logout/logout')
-      this.$$router.push({name: 'HomeView'})
+      const currentPath = this.$route.path
+      const newPath = '/v'
+
+      if (currentPath !== newPath) {
+        this.$router.push(newPath)
+      }
     },
 
     moveSearchView() {
@@ -95,7 +102,7 @@ export default {
 
 <style scoped>
 #nav-bar {
-  min-width: 800px;
+  min-width: 1000px;
 }
 #navbarNav {
   width: 80%;
@@ -109,15 +116,20 @@ export default {
   color: black;
 }
 
-#nav-container {
+#nav-container  {
   margin: 0;
   padding: 0;
-  width: 1300px;
-  min-width: 1005px;
+  width: 100%;
+  min-width: 1000px;
+}
+
+#main-nav {
+  width: 100%;
+  min-width: 1000px;
 }
 
 img {
-  width: 46px;
+  width: 60px;
 }
 
 .nav-item {
@@ -130,14 +142,16 @@ img {
 }
 
 #login-nav{
-  top: 18px;
-  right: 20px;
+  top: 29px;
+  right: 15px;
 }
 
 .text-decoration-none{
-  color: black;
+  color: white;
 }
+
 .btn-login{
   width: 50px;
+  margin-right: 25px;
 }
 </style>

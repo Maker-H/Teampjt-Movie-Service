@@ -2,6 +2,8 @@ import axios from 'axios'
 // 
 import { API_URL } from '@/store/CONSTS'
 import router from '@/router'
+import store from '@/store'
+
 
 const state = () => {
 }
@@ -22,17 +24,14 @@ const actions = {
       }
     })
       .then((res) => {
-        // console.log(res)
         localStorage.setItem('access', JSON.stringify(res.data.access));
         localStorage.setItem('refresh', JSON.stringify(res.data.refresh));
-        router.push({name: 'HomeView'}).catch(() => {})
+        router.push({name: 'HomeView'}).catch(err => console.log(err))
       })
       .catch(err => console.log(err))
+      store.dispatch('check/checkLoggedIn', {root: true})
+  },
 
-    },
-    checkLoggedIn(dispatch) {
-      dispatch('check/checkLoggedIn')
-  }
 }
 
 export default {

@@ -5,7 +5,7 @@
 
 const state = () => {
   return {
-    loggedIn: null,
+    loggedIn: false,
   }
 }
 const getters = {
@@ -17,7 +17,13 @@ const mutations = {
 }
 const actions = {
   checkLoggedIn(context) {
-    const access = localStorage.getItem('access')
+    console.log('checkLoggedIn 시작')
+    let access
+    if(localStorage.getItem('access')) {
+      access = true
+    } else{
+      access = false
+    }
     context.commit('CHECK_LOGGED_IN', access)
   },
 }
