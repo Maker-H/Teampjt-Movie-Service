@@ -1,9 +1,12 @@
 <template>
 	<div id="login-total">
+    <!-- 헤더 -->
     <div id="login-header">
 			<img src="../../public/images/이모티콘.png" alt="">
-      <h1 class="h3 mb-3 fw-normal color-white font-monospace" id="login-header">Please Login in</h1>
+      <h1 class="h3 mb-3 fw-normal color-white font-monospace" id="login-title">Please Login in</h1>
     </div>
+
+    <!-- 바디 -->
 		<form @submit.prevent="" class="form-signin" id="login-form">
 			<label for="username" class="visually-hidden">Phone Number </label>
 			<input type="text" id="username" class="form-control" placeholder="핸드폰 번호" required v-model="username">
@@ -13,6 +16,7 @@
 			<br>
 			<button class="w-100 btn btn-lg btn-warning fw-bold text-muted font-monospace" @click="login">Login</button>
 		</form>
+
 	</div>
 </template>
 
@@ -47,9 +51,9 @@ export default {
   color: white;
 }
 
-#login-header {
-  margin-top: 20px;
-  margin-bottom: 30px;
+#login-title {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #login-form {
