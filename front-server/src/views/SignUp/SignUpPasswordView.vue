@@ -65,7 +65,7 @@ export default {
   },
   computed: {
     userNumber() {
-      return this.$store.state.signup.renewedUserNumber;
+      return this.$store.state.signup.renewedUserNumber.slice(1)
     },
   },
   methods: {
