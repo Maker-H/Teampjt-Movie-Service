@@ -48,11 +48,15 @@ const actions = {
   },
 
   createComment(context, payload) {
+    const access = JSON.parse(localStorage.getItem('access'))
     const { content, movieId } = payload;
     axios({
       method: "post",
       url: `${API_URL}/movies/${movieId}/comments/`,
       data: { content },
+      headers: {
+        'Authorization': `Bearer ${access}`
+      }
     })
       .then(() => {
         actions.getCommentList(context);
@@ -65,9 +69,13 @@ const actions = {
   },
 
   deleteComment(context, commentId) {
+    const access = JSON.parse(localStorage.getItem('access'))
     axios({
       method: "delete",
       url: `${API_URL}/comments/${commentId}/`,
+      headers: {
+        'Authorization': `Bearer ${access}`
+      }
     })
       .then(() => {
         actions.getCommentList(context);
@@ -80,11 +88,15 @@ const actions = {
   },
 
   updateComment(context, payload) {
+    const access = JSON.parse(localStorage.getItem('access'))
     const { id, content } = payload;
     axios({
       method: "put",
       url: `${API_URL}/comments/${id}/`,
       data: { id, content },
+      headers: {
+        'Authorization': `Bearer ${access}`
+      }
     })
       .then(() => {
         actions.getCommentList(context);

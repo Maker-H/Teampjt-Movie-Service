@@ -21,6 +21,7 @@ const getters = {
     const recommandMovieList = weatherToGenre(state);
     return _.sample(recommandMovieList);
   },
+  genres: (state) => state.genres,
 };
 const mutations = {
   GET_MOVIELIST(state, movies) {
