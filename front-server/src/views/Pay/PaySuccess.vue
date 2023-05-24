@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="text-white">
     <h1>결제 성공</h1>
     <h4>포인트 충전이 완료되었습니다.</h4>
-    <a @click="moveProfile">프로필로 이동</a>
+    <h4 class="text-danger">페이지를 닫아주세요</h4>
   </div>
 </template>
 
@@ -21,9 +21,6 @@ export default {
       const payload = {tid, pgToken}
       this.$store.dispatch('point/paySuccess', payload)
     },
-    moveProfile(){
-      this.$router.push({name : 'ProfileView'})
-    }
   },
 
 }

@@ -15,7 +15,7 @@
           <div class="modal-body">
             <p class="text-dark">
             <b>hook 날씨 추천 서비스는 현재 날씨 상태에 따른 영화 장르를 추천해 사용자의 편의와 휴식을 도모합니다.<br><br>
-            사용법 - 아래 추천 버튼을 클릭하게 되면, 이용 요금으로 100포인트가 차감되며 포인트 충전은 <a href="http://localhost:8080/v/profile">프로필</a> 내 카카오 페이 충전을 이용해주세요.</b>
+            사용법 - 아래 추천 버튼을 클릭하게 되면, 이용 요금으로 100포인트가 차감되며 포인트 충전은 프로필 내 카카오 페이 충전을 이용해주세요.</b>
             </p>
             <img src="../../public/images/recommand.png" alt="recommand">
           </div>
@@ -48,6 +48,7 @@
         </p>
       </div>
       <p><b>추천 장르는 {{recommandGenre}}입니다.</b></p>
+      <p>{{userPoint}}</p>
       <hr>
       <RecommandItem :movie="recommandMovie"/>
     </div>
@@ -68,7 +69,7 @@ export default {
     RecommandItem
   },
   created() {
-    // this.getRecommandMovieList()
+    this.getUserPoint()
   },
   computed: {
     state(){
@@ -86,14 +87,26 @@ export default {
     },
     genres() {
       return this.$store.getters['recommand/genres']
+    },
+    userPoint() {
+      return this.$store.getters['recommand/userPoint']
     }
   },
   methods: {
+    getUserPoint() {
+      this.$store.dispatch('recommand/useUserPoint')
+    },
     getRecommandMovieList() {
+      if (this.userPoint=='0') {
+        alert('포인트 충전이 필요합니다.')
+        this.$router.push({name: 'ProfileView'})
+        return
+      }
       this.clicked = true
       this.$store.dispatch('recommand/getMovieList')
       this.$store.dispatch('recommand/getGenreList')
       this.$store.dispatch('recommand/getWeather')
+      this.getUserPoint()
     }
   }
 }
