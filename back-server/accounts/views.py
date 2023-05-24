@@ -52,6 +52,15 @@ def update_user_point(request, amount):
         user.points += int(amount)
         user.save()
         return Response(user.points, status=status.HTTP_200_OK)
+    
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def use_user_point(request, amount):
+    if request.method == 'POST':
+        user = get_object_or_404(get_user_model(), pk=request.user.id)
+        user.points -= amount
+        user.save()
+        return Response(user.points, status=status.HTTP_200_OK)
 
 
 @api_view(['POST'])

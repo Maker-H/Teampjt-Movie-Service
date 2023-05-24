@@ -46,7 +46,7 @@ const actions = {
     const access = JSON.parse(localStorage.getItem('access'))
     axios({
       method: 'post',
-      url: `${API_URL}/profile/point/${amount}/`,
+      url: `${API_URL}/profile/point/update/${amount}/`,
       headers: {
         'Authorization': `Bearer ${access}`,
       }

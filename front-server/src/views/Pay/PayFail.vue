@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="text-white">
     <h1>결제 실패</h1>
-    <a @click="moveProfile">프로필로 이동</a>
+    <h4>페이지를 닫아주세요</h4>
   </div>
 </template>
 
@@ -9,9 +9,6 @@
 export default {
   name: 'PayFail',
   methods: {
-    moveProfile(){
-      this.$router.push({name : 'ProfileView'})
-    }
   }
 }
 </script>
