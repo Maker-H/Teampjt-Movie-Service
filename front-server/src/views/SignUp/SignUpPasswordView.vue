@@ -10,7 +10,7 @@
       </h1>
     </div>
 
-    <form @submit.prevent="" class="form-signin" id="signup-form">
+    <form @submit.prevent="checkLoggedIn" class="form-signin" id="signup-form">
       <div class="side-label">
         <label for="username" class="side-label color-silver">핸드폰 번호</label>
       </div>
@@ -61,16 +61,16 @@ export default {
     };
   },
   created() {
-    this.userNumber;
+    this.userNumber
   },
   computed: {
     userNumber() {
-      return this.$store.state.signup.renewedUserNumber;
+      return this.$store.state.signup.renewedUserNumber.slice(1)
     },
   },
   methods: {
     signupPwd() {
-      const renewedUserNumber = this.$store.state.signup.renewedUserNumber;
+      const renewedUserNumber = this.$store.state.signup.renewedUserNumber
       // console.log(renewedUserNumber)
       const password1 = this.password1;
       const password2 = this.password2;
@@ -78,9 +78,12 @@ export default {
         renewedUserNumber: renewedUserNumber,
         password1,
         password2,
-      };
-      this.$store.dispatch("signup/signupPwd", user);
+      }
+      this.$store.dispatch("signup/signupPwd", user)
     },
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    }
   },
 };
 </script>

@@ -7,7 +7,7 @@
     </div>
 
     <!-- 바디 -->
-		<form @submit.prevent="" class="form-signin" id="login-form">
+		<form @submit.prevent="checkLoggedIn" class="form-signin" id="login-form">
 			<label for="username" class="visually-hidden">Phone Number </label>
 			<input type="text" id="username" class="form-control" placeholder="핸드폰 번호" required v-model="username">
 			<br>
@@ -37,7 +37,10 @@ export default {
 				renewedUsername, password
 			}
 			this.$store.dispatch('login/login', user)
-		}
+		},
+    checkLoggedIn() {
+      this.$$store.dispatch('check/checkLoggedIn')
+    }
 	}
 }
 </script>

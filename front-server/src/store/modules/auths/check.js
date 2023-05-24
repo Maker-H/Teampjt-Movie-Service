@@ -17,7 +17,7 @@ const mutations = {
 }
 const actions = {
   checkLoggedIn(context) {
-    console.log('checkLoggedIn 시작')
+    // console.log('checkLoggedIn 시작')
     let access
     if(localStorage.getItem('access')) {
       access = true
