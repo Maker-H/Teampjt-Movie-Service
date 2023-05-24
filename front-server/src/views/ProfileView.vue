@@ -30,6 +30,11 @@ export default {
     ProfilePoint,
     MovieItemList
   },
+  created() {
+    this.checkLoggedIn()
+    this.getLikedMovies()
+    this.getNewToken()
+  },
   beforeRouteEnter(to, from, next) {
     next(next => {
       next.checkLoggedIn()

@@ -6,7 +6,7 @@
         <h4 class="text-white p-3"><b>한 줄 평론 모아보기</b></h4>
       </div>
       <div class="d-flex flex-column justify-content-center" id="comments">
-        <div class="p-2 text-black comment-container" v-for="comment in comments" :key="comment.id">
+        <div class="p-2 text-black comment-container" v-for="(comment, idx) in comments" :key="comment.id">
           <div id="comment">
             {{ comment.content }}
           </div>
@@ -14,15 +14,15 @@
             <!-- user id -->
             <div class="d-flex align-items-center" id="comment-user">
               <img src="../../public/images/이모티콘.png" alt="">
-              <p class="position-absolute" id="comment-user">{{ }}</p>
+              <p class="position-absolute" id="comment-user">{{ userNumber }}</p>
             </div>
             <!-- 수정 삭제 버튼 -->
             <div class="d-flex">
-              <p class="m-0" v-if="comment.user === userId" @click="addUpdateComment(comment.id)">수정</p>
-              <p class="margin-left-delete" v-if="comment.user === userId" @click="deleteComment(comment.id)">삭제</p>
+              <p class="m-0" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
+              <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
             </div>
           </div>
-          <hr v-if="comment.id !== comments.length" class="comment-divider">
+          <hr v-if="idx !== comments.length - 1" class="comment-divider">
         </div>
       </div> 
     </div>
@@ -33,13 +33,13 @@
         <h4 class="text-white p-3"><b>영화 평론</b></h4>
       </div>
       <div class="d-flex flex-column justify-content-center" id="comments">
-        <div class="p-2 text-black comment-container" v-for="comment in comments" :key="comment.id">
+        <div class="p-2 text-black comment-container" v-for="(comment, idx) in comments" :key="comment.id">
           {{ comment.content }}
           <div class="d-flex justify-content-end" id="comment-update">
-            <p class="" v-if="comment.user === userId" @click="addUpdateComment(comment.id)">수정</p>
-            <p class="margin-left-delete" v-if="comment.user === userId" @click="deleteComment(comment.id)">삭제</p>
+            <p class="" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
+            <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
           </div>
-          <hr v-if="comment.id !== comments.length" class="comment-divider">
+          <hr v-if="idx !== comments.length - 1" class="comment-divider">
         </div>
       </div> 
 
@@ -53,38 +53,53 @@ export default {
   name: 'CommentList',
   created() {
     this.getUser()
+    this.getUserList()
+    this.isUserExist()
   },
   beforeRouteEnter(to, from, next) {
     next(next => {
       next.getUser()
+      next.getUserList()
+      next.isUserExist()
     })
   },
   props: {
     comments: Array
   },
   computed: {
+    isLoggedIn() {
+      console.log(this.userId)
+      return (commentUser) => commentUser === this.userId
+    },
+    userNumber() {
+      return this.$store.state.user.commentUserNumber
+    },
     userId() {
       if (this.$store.state.user.user) {
         return this.$store.state.user.user.id
       }
       else {
-        return 1
+        return 0
       }
     },
-    // userNumber() {
-    //   return 
-    // }
+
   },
   methods: {
+    isUserExist() {
+      if (!localStorage.getItem('access')) {
+        this.$store.dispatch('user/resetUser')
+      }
+    },
+    getUserList() {
+      this.$store.dispatch('user/getUserList')
+    },
     getUser() {
       this.$store.dispatch('user/getUser')
-      console.log('getuser')
     },
     deleteComment(commentId) {
       this.$store.dispatch('comment/deleteComment', commentId)
     },
     addUpdateComment(commentId) {
-      // console.log(commen)
       this.$store.dispatch('comment/addUpdateComment', commentId)
       
       // 페이지 하단으로 이동하는 기능

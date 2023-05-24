@@ -24,7 +24,7 @@ export default {
       this.$store.dispatch('check/checkLoggedIn')
     },
     getCommentList(){
-      console.log('startGetComment')
+      // console.log('startGetComment')
       this.$store.dispatch('comment/getCommentList')
     }
   },

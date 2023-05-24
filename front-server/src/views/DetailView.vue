@@ -35,6 +35,12 @@ export default {
             movieId: this.$route.params.movieId,
         }
     },
+    created() {
+        this.getDetailMovie()
+        this.getMovieCommentList()
+        this.getLikedMovie()
+        this.checkLoggedIn()
+    },
     beforeRouteEnter(to, from, next) {
         next(next => {
             next.getDetailMovie()

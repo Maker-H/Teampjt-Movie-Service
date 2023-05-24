@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, get_list_or_404
 from django.contrib.auth import get_user_model
 from .serializers import UserListSerializer
 
@@ -20,7 +20,16 @@ from my_api import SECRETE
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def user_data(request):
+def user_list(request):
+    if request.method == 'POST':
+        users = get_user_model().objects.all()
+        serializer = UserListSerializer(users, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def user_detail(request):
     if request.method == 'POST':
         user = get_object_or_404(get_user_model(), pk=request.user.id)
         serializer = UserListSerializer(user)

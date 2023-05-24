@@ -16,6 +16,10 @@ export default {
       next.getRecommandMovieList()
     })
   },
+  created(){
+    this.checkLoggedIn()
+    this.getRecommandMovieList()
+  },
   computed: {
     state(){
       return this.$store.getters['recommand/state']
