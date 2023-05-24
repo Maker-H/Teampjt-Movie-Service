@@ -29,7 +29,15 @@ export default {
 			password: null,
 		}
 	},
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.checkLoggedIn()
+    })
+  },
 	methods: {
+		checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    },
 		login() {
 			const renewedUsername = "P" + this.username
 			const password = this.password

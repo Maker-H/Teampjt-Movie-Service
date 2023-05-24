@@ -35,12 +35,18 @@ export default {
             movieId: this.$route.params.movieId,
         }
     },
-    created() {
-        this.getDetailMovie()
-        this.getMovieCommentList()
-        this.getLikedMovie()
+    beforeRouteEnter(to, from, next) {
+        next(next => {
+            next.getDetailMovie()
+            next.getMovieCommentList()
+            next.getLikedMovie()
+            next.checkLoggedIn()
+        })
     },
     methods: {
+        checkLoggedIn() {
+            this.$store.dispatch('check/checkLoggedIn')
+        },
         getDetailMovie(){
             this.$store.dispatch('detail/getDetailMovie', this.movieId)
         },

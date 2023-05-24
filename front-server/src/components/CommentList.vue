@@ -10,9 +10,17 @@
           <div id="comment">
             {{ comment.content }}
           </div>
-          <div class="d-flex justify-content-end" id="comment-update">
-            <p class="" v-if="comment.user === userId" @click="addUpdateComment(comment.id)">수정</p>
-            <p class="margin-left-delete" v-if="comment.user === userId" @click="deleteComment(comment.id)">삭제</p>
+          <div class="d-flex justify-content-between" id="comment-update">
+            <!-- user id -->
+            <div class="d-flex align-items-center" id="comment-user">
+              <img src="../../public/images/이모티콘.png" alt="">
+              <!-- <p class="position-absolute" id="comment-user">{{ userNumber }}</p> -->
+            </div>
+            <!-- 수정 삭제 버튼 -->
+            <div class="d-flex">
+              <p class="m-0" v-if="comment.user === userId" @click="addUpdateComment(comment.id)">수정</p>
+              <p class="margin-left-delete" v-if="comment.user === userId" @click="deleteComment(comment.id)">삭제</p>
+            </div>
           </div>
           <hr v-if="comment.id !== comments.length" class="comment-divider">
         </div>
@@ -25,7 +33,7 @@
         <h4 class="text-white p-3"><b>영화 평론</b></h4>
       </div>
       <div class="d-flex flex-column justify-content-center" id="comments">
-        <div class="p-2 text-white comment-container" v-for="comment in comments" :key="comment.id">
+        <div class="p-2 text-black comment-container" v-for="comment in comments" :key="comment.id">
           {{ comment.content }}
           <div class="d-flex justify-content-end" id="comment-update">
             <p class="" v-if="comment.user === userId" @click="addUpdateComment(comment.id)">수정</p>
@@ -46,17 +54,31 @@ export default {
   created() {
     this.getUser()
   },
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.getUser()
+    })
+  },
   props: {
     comments: Array
   },
   computed: {
     userId() {
-      return this.$store.state.user.user.id
+      if (this.$store.state.user.user) {
+        return this.$store.state.user.user.id
+      }
+      else {
+        return 1
+      }
     },
+    // userNumber() {
+    //   return 
+    // }
   },
   methods: {
     getUser() {
       this.$store.dispatch('user/getUser')
+      console.log('getuser')
     },
     deleteComment(commentId) {
       this.$store.dispatch('comment/deleteComment', commentId)
@@ -76,10 +98,18 @@ export default {
 </script>
 
 <style scoped>
-
-#comment {
-  font-size: 20px;
-}
+  #comment-user {
+    width: 40px;
+  }
+  
+  img {
+    width: 30px;
+  }
+  
+  #comment {
+    font-size: 20px;
+  }
+  
   .text-black {
     color: black;
   }
@@ -92,7 +122,7 @@ export default {
 
   .comment-divider {
     border: none;
-    border-top: 6px solid rgba(230, 188, 5, 0.849);
+    border-top: 3px solid rgb(116, 100, 100);
     margin-top: 10px;
   }
 
@@ -113,7 +143,7 @@ export default {
     width: 800px;
     margin: 0 auto;
     border-radius: 40px;
-    border: 10px solid rgba(228, 129, 16, 0.137);
+    border: 3px solid rgba(228, 129, 16, 0.829);
     padding-top: 45px;
   }
 </style>

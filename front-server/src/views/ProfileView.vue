@@ -30,11 +30,17 @@ export default {
     ProfilePoint,
     MovieItemList
   },
-  created() {
-    this.getLikedMovies()
-    this.getNewToken()
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.checkLoggedIn()
+      next.getLikedMovies()
+      next.getNewToken()
+    })
   },
   methods: {
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    },
     getLikedMovies() {
       this.$store.dispatch('likes/getLikedMovies')
     },

@@ -20,7 +20,7 @@ const actions = {
     const access = JSON.parse(localStorage.getItem('access'))
     axios({
       method: "post",
-      url: `${API_URL}/profile/id/`,
+      url: `${API_URL}/profile/user-data/`,
       headers: {
         'Authorization': `Bearer ${access}`
       }

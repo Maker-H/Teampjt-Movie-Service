@@ -33,6 +33,12 @@ export default {
   components: {
     MovieItemList
   },
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.getLatestMovieList()
+      next.checkLoggedIn()
+    })
+  },
   created() {
     this.getLatestMovieList();
   },
@@ -42,6 +48,9 @@ export default {
     }
   },
   methods: {
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    },
     getLatestMovieList() {
       this.$store.dispatch("home/getLatestMovieList")
     },

@@ -13,11 +13,18 @@ export default {
   components: {
     CommentList
   },
-  created() {
-    this.getCommentList()
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.getCommentList()
+      next.checkLoggedIn()
+    })
   },
   methods: {
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    },
     getCommentList(){
+      console.log('startGetComment')
       this.$store.dispatch('comment/getCommentList')
     }
   },

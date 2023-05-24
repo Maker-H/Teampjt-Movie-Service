@@ -10,8 +10,11 @@
 <script>
 export default {
   name: 'RecommandView',
-  created() {
-    this.getRecommandMovieList()
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.checkLoggedIn()
+      next.getRecommandMovieList()
+    })
   },
   computed: {
     state(){
@@ -29,6 +32,9 @@ export default {
     }
   },
   methods: {
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
+    },
     getRecommandMovieList() {
       this.$store.dispatch('recommand/getMovieList')
       this.$store.dispatch('recommand/getGenreList')
