@@ -14,7 +14,7 @@
             <!-- user id -->
             <div class="d-flex align-items-center" id="comment-user">
               <img src="../../public/images/이모티콘.png" alt="">
-              <!-- <p class="position-absolute" id="comment-user">{{ userNumber }}</p> -->
+              <p class="position-absolute" id="comment-user">{{ }}</p>
             </div>
             <!-- 수정 삭제 버튼 -->
             <div class="d-flex">

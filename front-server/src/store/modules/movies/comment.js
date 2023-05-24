@@ -63,7 +63,7 @@ const actions = {
         actions.getCommentList(context);
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
           context.dispatch('createComment', payload)
         }
@@ -87,7 +87,7 @@ const actions = {
         actions.getCommentList(context);
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
           context.dispatch('deleteComment', commentId)
         }
@@ -114,7 +114,7 @@ const actions = {
         context.commit("DELETE_UPDATE_COMMENT");
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
           context.dispatch('updateComment')
         }

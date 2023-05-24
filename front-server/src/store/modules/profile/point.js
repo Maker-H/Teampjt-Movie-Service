@@ -36,8 +36,9 @@ const actions = {
       })
       .catch((err) => {
         console.log(err)
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
+          context.dispatch('getUserPoint')
         }
       })
   },
@@ -56,8 +57,9 @@ const actions = {
       })
       .catch((err) => {
         console.log(err)
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
+          context.dispatch('updateUserPoint')
         }
       })
   },

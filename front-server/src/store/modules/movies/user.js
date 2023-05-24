@@ -30,7 +30,7 @@ const actions = {
         context.commit('GET_USER', res.data)
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
           context.dispatch('getUser')
         }
