@@ -16,6 +16,15 @@ import json
 from . import api
 from my_api import SECRETE
 
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def user_id(request):
+    if request.method == 'POST':
+        user = get_object_or_404(get_user_model(), pk=request.user.id)
+        return Response(user.id, status=status.HTTP_200_OK)
+
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def user_point(request):

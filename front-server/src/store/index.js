@@ -7,12 +7,15 @@ import detail from '@/store/modules/movies/detail'
 import recommand from '@/store/modules/movies/recommand'
 import comment from '@/store/modules/movies/comment'
 import search from '@/store/modules/movies/search'
+import user from '@/store/modules/movies/user'
+
 // auth
 import login from '@/store/modules/auths/login'
 import logout from '@/store/modules/auths/logout'
 import signup from '@/store/modules/auths/signup'
 import refresh from '@/store/modules/auths/refresh'
 import check from '@/store/modules/auths/check'
+
 // profile
 import point from '@/store/modules/profile/point'
 import likes from '@/store/modules/profile/likes'
@@ -38,6 +41,7 @@ export default new Vuex.Store({
     recommand,
     comment,
     search,
+    user,
     
     // auths
     login,

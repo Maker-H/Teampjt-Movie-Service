@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>평론 리스트</h1>
+    <!-- <h1>평론 리스트</h1> -->
     <hr>
     <CommentList :comments="comments"/>
   </div>
