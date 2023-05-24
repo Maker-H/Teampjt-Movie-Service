@@ -30,8 +30,9 @@ const actions = {
         context.commit('GET_LIKED_MOVIES', res.data)
       })
       .catch((err) => {
-        if (err.response.status === 401) {
+        if (err.response.status === 401 && access) {
           refresh.actions.token_refresh()
+          context.dispatch('getLikedMovies')
         }
       })
   },

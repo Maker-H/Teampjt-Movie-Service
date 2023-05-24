@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('user-data/', views.user_detail),
+    path('users/', views.user_list),
     path('point/', views.user_point),
     path('point/update/<str:amount>/', views.update_user_point),
     path('point/use/<int:amount>/', views.use_user_point),

@@ -60,6 +60,16 @@ import RecommandItem from '@/components/RecommandItem'
 
 export default {
   name: 'RecommandView',
+  beforeRouteEnter(to, from, next) {
+    next(next => {
+      next.checkLoggedIn()
+      next.getRecommandMovieList()
+    })
+  },
+  created(){
+    this.checkLoggedIn()
+    this.getRecommandMovieList()
+  },
   data() {
     return {
       clicked: false,
@@ -95,6 +105,9 @@ export default {
   methods: {
     getUserPoint() {
       this.$store.dispatch('recommand/useUserPoint')
+    },
+    checkLoggedIn() {
+      this.$store.dispatch('check/checkLoggedIn')
     },
     getRecommandMovieList() {
       if (this.userPoint=='0') {

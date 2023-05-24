@@ -1,0 +1,68 @@
+[
+{
+    "model": "movies.comment",
+    "pk": 1,
+    "fields": {
+        "movie": 615656,
+        "content": "1378 - 평론 1",
+        "created_at": "2023-05-23T07:45:23.391Z",
+        "updated_at": "2023-05-23T07:45:23.391Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 2,
+    "fields": {
+        "movie": 615656,
+        "content": "1378 - 평론 2",
+        "created_at": "2023-05-23T07:45:26.197Z",
+        "updated_at": "2023-05-23T07:45:26.197Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 3,
+    "fields": {
+        "movie": 615656,
+        "content": "1378 - 평론 3",
+        "created_at": "2023-05-23T07:45:29.013Z",
+        "updated_at": "2023-05-23T07:45:29.013Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 4,
+    "fields": {
+        "movie": 615656,
+        "content": "1378 - 수정 평론 4",
+        "created_at": "2023-05-23T07:45:31.973Z",
+        "updated_at": "2023-05-24T01:56:40.365Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 5,
+    "fields": {
+        "movie": 615656,
+        "content": "1378 - 평론 5",
+        "created_at": "2023-05-23T07:45:34.543Z",
+        "updated_at": "2023-05-23T07:45:34.543Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 6,
+    "fields": {
+        "movie": 615656,
+        "content": "5646 - 평론 1",
+        "created_at": "2023-05-23T07:46:28.533Z",
+        "updated_at": "2023-05-23T07:46:28.533Z",
+        "user": 2
+    }
+}
+]
