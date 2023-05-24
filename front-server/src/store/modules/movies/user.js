@@ -5,18 +5,18 @@ import refresh from '@/store/modules/auths/refresh'
 
 const state = () => {
   return {
-    userId: null
+    user: null
   }
 };
 const getters = {};
 const mutations = {
-  GET_USER_ID(state, userId) {
-    state.userId = userId
+  GET_USER(state, user) {
+    state.user = user
   }
 };
 
 const actions = {
-  getUserId(context) {
+  getUser(context) {
     const access = JSON.parse(localStorage.getItem('access'))
     axios({
       method: "post",
@@ -27,12 +27,12 @@ const actions = {
     })
       .then((res) => {
         // console.log(res.data)
-        context.commit('GET_USER_ID', res.data)
+        context.commit('GET_USER', res.data)
       })
       .catch((err) => {
         if (err.response.status === 401) {
           refresh.actions.token_refresh()
-          context.dispatch('getUserId')
+          context.dispatch('getUser')
         }
       })
   },
