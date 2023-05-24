@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- 한 줄 평론 모아보기 일때 보이는 부분 -->
+    <!-- 한 줄 평론 모아보기 -->
     <div v-if="$route.path == '/v/comments'">
       <div>
         <h4 class="text-white p-3"><b>한 줄 평론 모아보기</b></h4>
@@ -10,19 +10,23 @@
           <div id="comment">
             {{ comment.content }}
           </div>
-          <div class="d-flex justify-content-between" id="comment-update">
+          <div class="d-flex justify-content-between" :class="{'last-comment': isEndDiv(idx, comments)}" id="comment-update">
+            
             <!-- user id -->
-            <div class="d-flex align-items-center" id="comment-user">
-              <img src="../../public/images/이모티콘.png" alt="">
-              <p class="position-absolute" id="comment-user">{{ userNumber }}</p>
+            <div :class="{'last-userinfo': isEndDiv(idx, comments)}" class="d-flex align-items-center justify-content-between" id="comment-user">
+              <div>
+                <img src="../../public/images/이모티콘.png" alt="">
+              </div>
+              <p class="user-number" >
+                {{ commentUsernames[comment.user] }}
+              </p>
             </div>
             <!-- 수정 삭제 버튼 -->
             <div class="d-flex">
-              <p class="m-0" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
               <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
             </div>
           </div>
-          <hr v-if="idx !== comments.length - 1" class="comment-divider">
+          <hr v-if="isNotEndDiv(idx, comments)" class="comment-divider">
         </div>
       </div> 
     </div>
@@ -33,13 +37,31 @@
         <h4 class="text-white p-3"><b>영화 평론</b></h4>
       </div>
       <div class="d-flex flex-column justify-content-center" id="comments">
-        <div class="p-2 text-black comment-container" v-for="(comment, idx) in comments" :key="comment.id">
-          {{ comment.content }}
-          <div class="d-flex justify-content-end" id="comment-update">
-            <p class="" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
-            <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
+        
+        <div class="p-2 text-black comment-container" v-for="(comment, idx) in comments" :key="comment.id">  
+          <!-- 내용 -->
+          <div id="comment">
+            {{ comment.content }}
           </div>
-          <hr v-if="idx !== comments.length - 1" class="comment-divider">
+          <!--  -->
+          <div class="d-flex justify-content-between" :class="{'last-comment': isEndDiv(idx, comments)}" id="comment-update">
+            <!-- user id -->
+            <div :class="{'last-userinfo': isEndDiv(idx, comments)}" class="d-flex align-items-center" id="comment-user">
+              <div>
+                <img src="../../public/images/이모티콘.png" alt="">
+              </div>
+              <p class="user-number">
+                {{ commentUsernames[comment.user] }}
+              </p>
+            </div>
+            <!-- 수정 삭제 버튼 -->
+            <div class="d-flex">
+              <p class="m-0" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
+              <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
+            </div>
+
+          </div>
+          <hr v-if="isNotEndDiv(idx, comments)" class="comment-divider">
         </div>
       </div> 
 
@@ -67,12 +89,14 @@ export default {
     comments: Array
   },
   computed: {
-    isLoggedIn() {
-      // console.log(this.userId)
-      return (commentUser) => commentUser === this.userId
+    isEndDiv() {
+      return (idx, comments) => idx === comments.length -1
     },
-    userNumber() {
-      return this.$store.state.user.commentUserNumber
+    isNotEndDiv() {
+      return (idx, comments) => idx !== comments.length -1
+    },
+    isLoggedIn() {
+      return (commentUser) => commentUser === this.userId
     },
     userId() {
       if (this.$store.state.user.user) {
@@ -82,7 +106,15 @@ export default {
         return 0
       }
     },
-
+    commentUsernames() {
+      if (!this.$store.state.user.userList) {
+        return '010********'
+      }
+      return this.$store.state.user.userList.reduce((username, user) => {
+        username[user.id] = '010'+'****'+user.username.slice(8)
+        return username
+      }, {})
+    },
   },
   methods: {
     isUserExist() {
@@ -113,8 +145,20 @@ export default {
 </script>
 
 <style scoped>
+  .user-number {
+    padding-top: 26px;
+  }
+  
   #comment-user {
-    width: 40px;
+    width: 123px;
+  }
+
+  .last-userinfo {
+    margin-bottom: 100px;
+  }
+
+  .last-comment {
+    line-height: 10px;
   }
   
   img {
@@ -140,7 +184,6 @@ export default {
     border-top: 3px solid rgb(116, 100, 100);
     margin-top: 10px;
   }
-
 
   #comment-update{
     margin-right: 20px;

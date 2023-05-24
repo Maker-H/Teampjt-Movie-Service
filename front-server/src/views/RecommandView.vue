@@ -69,6 +69,7 @@ export default {
   created(){
     this.checkLoggedIn()
     this.getRecommandMovieList()
+    this.getUserPoint()
   },
   data() {
     return {
@@ -77,9 +78,6 @@ export default {
   },
   components: {
     RecommandItem
-  },
-  created() {
-    this.getUserPoint()
   },
   computed: {
     state(){
