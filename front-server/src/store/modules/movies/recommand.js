@@ -16,6 +16,10 @@ const state = () => {
     recommandGenreList: [],
     recommand: {},
     userPoint: 0,
+    curAddress: null,
+    center: null,
+    longitude: null,
+    latitude: null,
   };
 };
 const getters = {
@@ -40,7 +44,9 @@ const getters = {
       })       
     })
     return state.recommandGenreList
-  }
+  },
+  center: (state) => state.center,
+
 };
 const mutations = {
   GET_MOVIELIST(state, movies) {
@@ -57,6 +63,12 @@ const mutations = {
   },
   GET_USER_POINT(state, point){
     state.userPoint = point
+  },
+  GET_MAP_PARAMS(state, coordinate){
+    const { latitude, longitude } = coordinate
+    state.latitude = latitude
+    state.longitude = longitude
+    state.center = {lat:latitude, lng:longitude}
   }
 };
 const actions = {
@@ -80,8 +92,13 @@ const actions = {
       })
       .catch((err) => console.log(err));
   },
-  getWeather(context) {
-    const { vilageWeatherUrl, payload } = weatherParams();
+  getWeather(context, nxny) {
+    // 여기에 nx ny 주기
+    const {nx, ny} = nxny
+    const ni = nx
+    const nj = ny
+    const ninj = {ni, nj}
+    const { vilageWeatherUrl, payload } = weatherParams(ninj);
     
     axios
       .get(vilageWeatherUrl + payload)
@@ -110,6 +127,35 @@ const actions = {
           refresh.actions.token_refresh()
         }
       })
+  },
+  getMapParams(context, coordinate) {
+    context.commit('GET_MAP_PARAMS', coordinate)
+  },
+  getMapData(context, address) {
+    axios({
+      methods: "get",
+      url: `${API_URL}/maps/`,
+    })
+      .then((res) => {
+        // console.log(res.data)
+        res.data.forEach(map => {
+          if (map.sido==address[0] && map.gusi==address[1] && map.dong==address[2]) {
+            this.curAddress = map
+            return false
+          }
+        });
+        const nx = this.curAddress.nx
+        const ny = this.curAddress.ny
+        const nxny = { nx, ny }
+
+        const longitude = this.curAddress.longitude
+        const latitude = this.curAddress.latitude
+        const coordinate = { latitude, longitude }
+        actions.getWeather(context, nxny)
+        actions.getMapParams(context, coordinate)
+      })
+      .catch((err) => console.log(err));
+
   }
 };
 

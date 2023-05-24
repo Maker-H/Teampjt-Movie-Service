@@ -26,60 +26,67 @@
       </div>
     </div>
     <div class="p-5">
-      <button @click="getRecommandMovieList" class="btn btn-light"><b>영화 추천</b></button>
+      <input v-if="clicked" type="text" v-model.trim="address" @keyup.enter="getRecommandMovieList">
+      <button v-if="clicked" @click="getRecommandMovieList">주소 등록</button>
+      <button v-else @click="getAddress" class="btn btn-light"><b>영화 추천</b></button>
     </div>
-    <div class="p-2" v-if="clicked">
-      <h3><b>현재 날씨는 {{state}}, 기온은 {{temperature}}도 입니다.</b></h3>
-      <div class="p-3 text-light">
-        <p v-if="state=='맑음'">
-          맑은 날씨는 야외 활동과 모험적인 분위기에 적합합니다. <br>Adventure 장르의 영화는 모험과 액션을 담고 있어 맑은 날씨와 잘 어울립니다. <br>"인디아나 존스" 시리즈나 "나니아 연대기"와 같은 영화를 추천합니다.
-        </p>
-        <p v-else-if="'비'">
-          비는 종종 우울하거나 잔잔한 분위기를 연상시킵니다. Drama 장르의 영화는 인간의 감정과 인생 이야기를 다루어 비와 잘 어울리는 분위기를 조성합니다. "타이타닉"이나 "그린 북"과 같은 감동적인 드라마를 추천합니다.
-        </p>
-        <p v-else-if="'비/눈'">
-          비와 눈이 함께 오는 날씨는 비밀스러움과 신비로움을 연상시킵니다. Mystery 장르의 영화는 수수께끼와 미스터리한 이야기를 풀어나가는데 적합합니다. "셔터 아일랜드"나 "골드핑거"와 같은 영화를 추천합니다.
-        </p>
-        <p v-else-if="'눈'">
-          눈이 내리는 날씨는 환상적이고 매력적인 분위기를 연출합니다. Animation 장르의 영화는 창의적인 그래픽과 아름다운 애니메이션을 통해 눈의 아름다움을 재현할 수 있습니다. "겨울왕국"이나 "라푼젤"과 같은 애니메이션 영화를 추천합니다.
-        </p>
-        <p v-else-if="'소나기'">
-          소나기는 긴장감과 불안감을 유발할 수 있습니다. Thriller 장르의 영화는 흥미진진한 이야기와 긴장감 넘치는 장면들로 소나기와 어울리는 분위기를 조성합니다. "인셉션"이나 "매트릭스"와 같은 스릴러 영화를 추천합니다.
-        </p>
+    <div v-if="clickedAddress" class="d-flex justify-content-center">
+      <div class="" style="margin-right:200px;">
+        <h3><b>현재 날씨는 {{state}}, 기온은 {{temperature}}도 입니다.</b></h3>
+        <div class="text-light">
+          <p v-if="state=='맑음'">
+            맑은 날씨는 야외 활동과 모험적인 분위기에 적합합니다. <br>Adventure 장르의 영화는 모험과 액션을 담고 있어 맑은 날씨와 잘 어울립니다. <br>"인디아나 존스" 시리즈나 "나니아 연대기"와 같은 영화를 추천합니다.
+          </p>
+          <p v-else-if="'비'">
+            비는 종종 우울하거나 잔잔한 분위기를 연상시킵니다. Drama 장르의 영화는 인간의 감정과 인생 이야기를 다루어 비와 잘 어울리는 분위기를 조성합니다. "타이타닉"이나 "그린 북"과 같은 감동적인 드라마를 추천합니다.
+          </p>
+          <p v-else-if="'비/눈'">
+            비와 눈이 함께 오는 날씨는 비밀스러움과 신비로움을 연상시킵니다. Mystery 장르의 영화는 수수께끼와 미스터리한 이야기를 풀어나가는데 적합합니다. "셔터 아일랜드"나 "골드핑거"와 같은 영화를 추천합니다.
+          </p>
+          <p v-else-if="'눈'">
+            눈이 내리는 날씨는 환상적이고 매력적인 분위기를 연출합니다. Animation 장르의 영화는 창의적인 그래픽과 아름다운 애니메이션을 통해 눈의 아름다움을 재현할 수 있습니다. "겨울왕국"이나 "라푼젤"과 같은 애니메이션 영화를 추천합니다.
+          </p>
+          <p v-else-if="'소나기'">
+            소나기는 긴장감과 불안감을 유발할 수 있습니다. Thriller 장르의 영화는 흥미진진한 이야기와 긴장감 넘치는 장면들로 소나기와 어울리는 분위기를 조성합니다. "인셉션"이나 "매트릭스"와 같은 스릴러 영화를 추천합니다.
+          </p>
+        </div>
+        <p><b>추천 장르는 {{recommandGenre}}입니다.</b></p>
+        <p>{{userPoint}}</p>
       </div>
-      <p><b>추천 장르는 {{recommandGenre}}입니다.</b></p>
-      <p>{{userPoint}}</p>
-      <hr>
-      <RecommandItem :movie="recommandMovie"/>
+      <div>
+        <RecommandMap :center="center"/>
+      </div>
     </div>
+    <hr>
+    <RecommandItem :movie="recommandMovie"/>
   </div>
 </template>
 
 <script>
 import RecommandItem from '@/components/RecommandItem'
+import RecommandMap from '@/components/RecommandMap'
 
 export default {
   name: 'RecommandView',
   beforeRouteEnter(to, from, next) {
     next(next => {
       next.checkLoggedIn()
-      next.getRecommandMovieList()
+      // next.getRecommandMovieList()
     })
   },
   created(){
     this.checkLoggedIn()
-    this.getRecommandMovieList()
   },
   data() {
     return {
       clicked: false,
+      address: null,
+      clickedAddress: false,
     }
   },
   components: {
-    RecommandItem
-  },
-  created() {
-    this.getUserPoint()
+    RecommandItem,
+    RecommandMap
   },
   computed: {
     state(){
@@ -92,7 +99,6 @@ export default {
       return this.$store.getters['recommand/recommandGenre']
     },
     recommandMovie(){
-      // console.log('recommand', this.$store.getters['recommand/recommandMovie'])
       return this.$store.getters['recommand/recommandMovie']
     },
     genres() {
@@ -100,27 +106,34 @@ export default {
     },
     userPoint() {
       return this.$store.getters['recommand/userPoint']
+    },
+    center() {
+      return this.$store.getters['recommand/center']
     }
   },
   methods: {
-    getUserPoint() {
+    useUserPoint() {
       this.$store.dispatch('recommand/useUserPoint')
     },
     checkLoggedIn() {
       this.$store.dispatch('check/checkLoggedIn')
     },
-    getRecommandMovieList() {
-      if (this.userPoint=='0') {
-        alert('포인트 충전이 필요합니다.')
-        this.$router.push({name: 'ProfileView'})
-        return
-      }
+    getAddress() {
       this.clicked = true
+    },
+    getRecommandMovieList() {
+      const address = this.address.split(" ")
+      // if (this.userPoint=='0') {
+      //   alert('포인트 충전이 필요합니다.')
+      //   this.$router.push({name: 'ProfileView'})
+      //   return
+      // }
+      this.clickedAddress = true
       this.$store.dispatch('recommand/getMovieList')
       this.$store.dispatch('recommand/getGenreList')
-      this.$store.dispatch('recommand/getWeather')
-      this.getUserPoint()
-    }
+      this.$store.dispatch('recommand/getMapData', address)
+      this.useUserPoint()
+    },
   }
 }
 </script>
