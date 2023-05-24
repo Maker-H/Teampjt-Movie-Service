@@ -10,13 +10,11 @@ const state = () => {
   }
 };
 const getters = {
-  commentUserNumber(state) {
-    console.log(state.userList)
-  }
 };
 
 const mutations = {
   GET_USER_LIST(state, userList) {
+    console.log(userList)
     state.userList = userList
   },
   GET_USER(state, user) {

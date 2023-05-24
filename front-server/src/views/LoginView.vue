@@ -46,9 +46,7 @@ export default {
 			}
 			this.$store.dispatch('login/login', user)
 		},
-    checkLoggedIn() {
-      this.$$store.dispatch('check/checkLoggedIn')
-    }
+
 	}
 }
 </script>
