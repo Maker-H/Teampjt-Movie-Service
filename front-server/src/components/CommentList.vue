@@ -68,7 +68,7 @@ export default {
   },
   computed: {
     isLoggedIn() {
-      console.log(this.userId)
+      // console.log(this.userId)
       return (commentUser) => commentUser === this.userId
     },
     userNumber() {
@@ -158,7 +158,7 @@ export default {
     width: 800px;
     margin: 0 auto;
     border-radius: 40px;
-    border: 3px solid rgba(228, 129, 16, 0.829);
+    border: 3px solid rgba(165, 13, 13, 0.829);
     padding-top: 45px;
   }
 </style>
