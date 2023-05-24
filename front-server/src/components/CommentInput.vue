@@ -4,10 +4,10 @@
       <label class="text-white p-3" style="margin-right:20px;" for="content"><b>본 영화에 대한 한 줄 평론을 작성해주세요.</b></label>
       <div class="d-flex justify-content-center">
         <div class="p-3">
-          <textarea class="form-control" id="content" cols="40" rows="5" v-model="content" placeholder="본 영화에 대한 한 줄 평론을 작성해주세요."></textarea>
+          <textarea  @keyup.enter="createComment" class="form-control" id="content" cols="40" rows="5" v-model="content" placeholder="본 영화에 대한 한 줄 평론을 작성해주세요."></textarea>
         </div>
         <div style="margin-top:115px; margin-left:10px">
-          <input class="btn btn-light" type="submit" value="등록">
+          <button class="btn btn-light">등록</button>
         </div>
       </div>
     </form>
@@ -15,7 +15,7 @@
       <label class="text-white p-3" style="margin-right:20px;" for="content"><b>본 영화에 대한 한 줄 평론을 작성해주세요.</b></label>
       <div class="d-flex justify-content-center">
         <div class="p-3">
-          <textarea class="form-control" id="content" cols="40" rows="5" v-model.lazy="updateCommentObject.content"></textarea>
+          <textarea @keyup.enter="createComment" class="form-control" id="content" cols="40" rows="5" v-model.lazy="updateCommentObject.content"></textarea>
         </div>
         <div style="margin-top:115px; margin-left:10px">
           <input class="btn btn-light" type="submit" value="수정">

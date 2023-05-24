@@ -23,7 +23,7 @@
             </div>
             <!-- 수정 삭제 버튼 -->
             <div class="d-flex">
-              <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
+              <p class="pointer margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
             </div>
           </div>
           <hr v-if="isNotEndDiv(idx, comments)" class="comment-divider">
@@ -56,8 +56,8 @@
             </div>
             <!-- 수정 삭제 버튼 -->
             <div class="d-flex">
-              <p class="m-0" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
-              <p class="margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
+              <p class="m-0 pointer" v-if="isLoggedIn(comment.user)" @click="addUpdateComment(comment.id)">수정</p>
+              <p class="pointer margin-left-delete" v-if="isLoggedIn(comment.user)" @click="deleteComment(comment.id)">삭제</p>
             </div>
 
           </div>
@@ -145,6 +145,10 @@ export default {
 </script>
 
 <style scoped>
+  .pointer:hover {
+    cursor: pointer;
+  }
+
   .user-number {
     padding-top: 26px;
   }
