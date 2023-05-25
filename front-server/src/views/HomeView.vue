@@ -17,7 +17,7 @@
           <h1 class="main_color"><b>최신 영화 추천</b></h1>
         </div>
         <div class="p-2">
-          <i class="fa-solid fa-video fa-2xl" style="color: rgb(180, 180, 180);"></i>
+          <i class="fa-solid fa-video fa-2xl" style="color: rgb(255, 255, 255);"></i>
         </div>
       </div>
       <div class="my-5"> 
@@ -63,7 +63,7 @@ export default {
     opacity: 0.7;
   }
   .main_color {
-    color: rgb(180, 180, 180);
+    color: rgb(255, 255, 255);
   }
 
 </style>

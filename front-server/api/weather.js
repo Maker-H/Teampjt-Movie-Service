@@ -1,14 +1,15 @@
 // 날씨 API 사용 from 기상청 단기예보 서비스(https://www.data.go.kr/data/15084084/openapi.do)
 
-const weatherParams = () => {
+const weatherParams = (ninj) => {
     const vilageWeatherUrl = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?';
     const serviceKey = 'VeIyQYlemcin0TUHlsQrWib5AWUE%2FUvpjhihs9Gkk%2BKuwBMDmqjoK3HnD9Dl1qxfXs6GIXPX13Ftdyi2RqkzGw%3D%3D';
     // 날짜, 시간, 좌표를 Query String으로 구성해 payload 완성
     const today = new Date();
     const baseDate = today.getFullYear() + ('0' + (today.getMonth() + 1)).slice(-2) + ('0' + today.getDate()).slice(-2);
     const baseTime = '0800';
-    const nx = '86';
-    const ny = '95';
+    const {ni, nj} = ninj
+    const nx = ni;
+    const ny = nj;
 
     const payload = `serviceKey=${serviceKey}&dataType=json&base_date=${baseDate}&base_time=${baseTime}&nx=${nx}&ny=${ny}`;
 
