@@ -8,6 +8,7 @@ import recommand from '@/store/modules/movies/recommand'
 import comment from '@/store/modules/movies/comment'
 import search from '@/store/modules/movies/search'
 import user from '@/store/modules/movies/user'
+import movie from '@/store/modules/movies/movie'
 
 // auth
 import login from '@/store/modules/auths/login'
@@ -42,6 +43,7 @@ export default new Vuex.Store({
     comment,
     search,
     user,
+    movie,
     
     // auths
     login,

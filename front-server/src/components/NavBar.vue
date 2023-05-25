@@ -82,6 +82,7 @@ export default {
     },
 
     moveSearchView() {
+      console.log(this.movieTitle)
       if (!this.movieTitle){
         alert('검색 결과가 없습니다.')
         return

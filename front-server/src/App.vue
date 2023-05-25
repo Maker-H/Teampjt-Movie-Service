@@ -11,6 +11,10 @@ export default {
   name: 'App',
   components: {
     NavBar,
+  },
+  created() {
+    this.$store.dispatch('movie/getMovieList')
+    this.$store.dispatch('movie/getGenreList')
   }
 }
 </script>

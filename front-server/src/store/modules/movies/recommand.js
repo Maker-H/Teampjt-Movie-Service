@@ -6,11 +6,13 @@ import { weatherParams, weatherDataPreprocessing, weatherToGenre } from '/api/we
 import { API_URL } from '@/store/CONSTS'
 // 
 import refresh from '@/store/modules/auths/refresh'
+//
+import movie from '@/store/modules/movies/movie'
 
 const state = () => {
   return {
-    movies: [],
-    genres: [],
+    movies: movie.state.movies,
+    genres: movie.state.genres,
     weatherData: {},
     recommandGenre: "",
     recommandGenreList: [],
@@ -44,14 +46,14 @@ const getters = {
 
 };
 const mutations = {
-  GET_MOVIELIST(state, movies) {
-    state.movies = movies;
-    // console.log(state.movies);
-  },
-  GET_GENRELIST(state, genres) {
-    state.genres = genres;
-    //   console.log(state.genres)
-  },
+  // GET_MOVIELIST(state, movieList) {
+  //   state.movies = movieList;
+  //   // console.log(state.movies);
+  // },
+  // GET_GENRELIST(state, genres) {
+  //   state.genres = genres;
+  //   //   console.log(state.genres)
+  // },
   GET_WEATHER(state, data) {
     state.weatherData = data;
     const recommandMovieList = weatherToGenre(state);
@@ -69,26 +71,27 @@ const mutations = {
   }
 };
 const actions = {
-  getMovieList(context) {
-    axios({
-      methods: "get",
-      url: `${API_URL}/movies/`,
-    })
-      .then((res) => {
-        context.commit("GET_MOVIELIST", res.data);
-      })
-      .catch((err) => console.log(err));
-  },
-  getGenreList(context) {
-    axios({
-      methods: "get",
-      url: `${API_URL}/genres/`,
-    })
-      .then((res) => {
-        context.commit("GET_GENRELIST", res.data);
-      })
-      .catch((err) => console.log(err));
-  },
+  // getMovieList(context) {
+  //   axios({
+  //     methods: "get",
+  //     url: `${API_URL}/movies/`,
+  //   })
+  //     .then((res) => {
+  //       context.commit("GET_MOVIELIST", res.data);
+  //     })
+  //     .catch((err) => console.log(err));
+
+  // },
+  // getGenreList(context) {
+  //   axios({
+  //     methods: "get",
+  //     url: `${API_URL}/genres/`,
+  //   })
+  //     .then((res) => {
+  //       context.commit("GET_GENRELIST", res.data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // },
   getWeather(context, nxny) {
     // 여기에 nx ny 주기
     const {nx, ny} = nxny
