@@ -8,7 +8,11 @@
 <script>
 export default {
   name: 'PayCancel',
+  created() {
+    this.$store.dispatch('check/checkLoggedIn')
+  },
   methods: {
+    
   },
 }
 </script>

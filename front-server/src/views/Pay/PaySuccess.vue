@@ -13,6 +13,7 @@ export default {
   name: 'PaySuccess',
   created() {
     this.paySuccess()
+    this.$store.dispatch('check/checkLoggedIn')
   },
   methods: {
     paySuccess(){
