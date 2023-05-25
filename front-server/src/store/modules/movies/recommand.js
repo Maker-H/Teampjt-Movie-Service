@@ -14,12 +14,12 @@ const state = () => {
     weatherData: {},
     recommandGenre: "",
     recommandGenreList: [],
-    recommand: {},
+    recommand: {'sample': 'ex'},
     userPoint: 0,
     curAddress: null,
-    center: null,
-    longitude: null,
-    latitude: null,
+    center: {lat: 0, lng: 0},
+    longitude: 0,
+    latitude: 0,
   };
 };
 const getters = {
@@ -27,12 +27,7 @@ const getters = {
   temperature: (state) => state.weatherData.tmp,
   recommandGenre: (state) => state.recommandGenre,
   userPoint: (state) => state.userPoint,
-  recommandMovie(state) {
-    const recommandMovieList = weatherToGenre(state);
-    state.recommand = _.sample(recommandMovieList)
-    const recommand = state.recommand
-    return recommand;
-  },
+  recommandMovie: (state) => state.recommand,
   genres: (state) => state.genres,
   recommandGenres(state) {
     state.recommandGenreList = []
@@ -59,6 +54,8 @@ const mutations = {
   },
   GET_WEATHER(state, data) {
     state.weatherData = data;
+    const recommandMovieList = weatherToGenre(state);
+    state.recommand = _.sample(recommandMovieList)
     // console.log(state.weatherData);
   },
   GET_USER_POINT(state, point){
@@ -119,7 +116,6 @@ const actions = {
     })
       .then((res) => {
         // console.log(res.data)
-        console.log('use point')
         context.commit('GET_USER_POINT', res.data)
       })
       .catch((err) => {
@@ -156,8 +152,29 @@ const actions = {
         actions.getMapParams(context, coordinate)
       })
       .catch((err) => console.log(err));
+  },
+  getUserPoint(context) {
+    const access = JSON.parse(localStorage.getItem('access'))
 
-  }
+    axios({
+      method: 'post',
+      url: `${API_URL}/profile/point/`,
+      headers: {
+        'Authorization': `Bearer ${access}`,
+      }
+    })
+      .then((res) => {
+        context.commit('GET_USER_POINT', res.data)
+        // console.log(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+        if (err.response.status === 401 && access) {
+          refresh.actions.token_refresh()
+          context.dispatch('getUserPoint')
+        }
+      })
+  },
 };
 
 export default {

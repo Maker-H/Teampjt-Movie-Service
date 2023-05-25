@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>여기 맵이다.</h3>
     <div>
       <gmap-map
           :zoom="14"    
