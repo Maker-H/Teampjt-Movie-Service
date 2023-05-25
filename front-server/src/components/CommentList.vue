@@ -17,7 +17,10 @@
               <div>
                 <img src="../../public/images/이모티콘.png" alt="">
               </div>
-              <p class="user-number" >
+              <p class="user-number" v-if="checkUserLoggedIn">
+                {{ commentNotLoggedInUsernames }}
+              </p>
+              <p class="user-number" v-else>
                 {{ commentUsernames[comment.user] }}
               </p>
             </div>
@@ -46,11 +49,14 @@
           <!--  -->
           <div class="d-flex justify-content-between" :class="{'last-comment': isEndDiv(idx, comments)}" id="comment-update">
             <!-- user id -->
-            <div :class="{'last-userinfo': isEndDiv(idx, comments)}" class="d-flex align-items-center" id="comment-user">
+            <div :class="{'last-userinfo': isEndDiv(idx, comments)}" class="d-flex align-items-center justify-content-between" id="comment-user">
               <div>
                 <img src="../../public/images/이모티콘.png" alt="">
               </div>
-              <p class="user-number">
+              <p class="user-number" v-if="checkUserLoggedIn">
+                {{ commentNotLoggedInUsernames }}
+              </p>
+              <p class="user-number" v-else>
                 {{ commentUsernames[comment.user] }}
               </p>
             </div>
@@ -106,13 +112,16 @@ export default {
         return 0
       }
     },
-    commentUsernames() {
-      if (!this.$store.state.user.userList) {
+    checkUserLoggedIn() {
+      return !this.$store.state.check.loggedIn
+    },
+    commentNotLoggedInUsernames() {
         return '010********'
-      }
+    },
+    commentUsernames() {
       return this.$store.state.user.userList.reduce((username, user) => {
-        username[user.id] = '010'+'****'+user.username.slice(8)
-        return username
+            username[user.id] = '010'+'****'+user.username.slice(8)
+            return username
       }, {})
     },
   },
