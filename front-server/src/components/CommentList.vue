@@ -17,8 +17,11 @@
               <div>
                 <img src="../../public/images/이모티콘.png" alt="">
               </div>
-              <p class="user-number" >
-                {{ commentUsernames }}
+              <p class="user-number" v-if="checkUserLoggedIn">
+                {{ commentNotLoggedInUsernames }}
+              </p>
+              <p class="user-number" v-else>
+                {{ commentUsernames[comment.user] }}
               </p>
             </div>
             <!-- 수정 삭제 버튼 -->
@@ -50,8 +53,11 @@
               <div>
                 <img src="../../public/images/이모티콘.png" alt="">
               </div>
-              <p class="user-number">
-                {{ commentUsernames }}
+              <p class="user-number" v-if="checkUserLoggedIn">
+                {{ commentNotLoggedInUsernames }}
+              </p>
+              <p class="user-number" v-else>
+                {{ commentUsernames[comment.user] }}
               </p>
             </div>
             <!-- 수정 삭제 버튼 -->
@@ -106,18 +112,17 @@ export default {
         return 0
       }
     },
-    commentUsernames() {
-      if (!this.$store.state.check.loggedIn) {
-        console.log(this.$store.state.check.loggedIn)
+    checkUserLoggedIn() {
+      return !this.$store.state.check.loggedIn
+    },
+    commentNotLoggedInUsernames() {
         return '010********'
-      }
-      return (commentuser) => { 
-          const usernames = this.$store.state.user.userList.reduce((username, user) => {
+    },
+    commentUsernames() {
+      return this.$store.state.user.userList.reduce((username, user) => {
             username[user.id] = '010'+'****'+user.username.slice(8)
             return username
-          }, {})
-        return usernames[commentuser]
-      }
+      }, {})
     },
   },
   methods: {
