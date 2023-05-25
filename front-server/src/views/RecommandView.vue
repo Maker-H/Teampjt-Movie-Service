@@ -26,7 +26,8 @@
       </div>
     </div>
     <div class="p-5">
-      <input v-if="clicked" type="text" v-model.trim="address" @keyup.enter="getRecommandMovieList">
+      <!-- @keyup.enter="getRecommandMovieList" -->
+      <input v-if="clicked" type="text" v-model.trim="address">
       <button v-if="clicked" @click="getRecommandMovieList">주소 등록</button>
       <button v-else @click="getAddress" class="btn btn-light"><b>영화 추천</b></button>
     </div>
@@ -123,11 +124,12 @@ export default {
     },
     getRecommandMovieList() {
       const address = this.address.split(" ")
-      // if (this.userPoint=='0') {
-      //   alert('포인트 충전이 필요합니다.')
-      //   this.$router.push({name: 'ProfileView'})
-      //   return
-      // }
+      console.log(typeof(this.userPoint), this.userPoint)
+      if (this.userPoint <= 0) {
+        alert('포인트 충전이 필요합니다.')
+        this.$router.push({name: 'ProfileView'})
+        return
+      }
       this.clickedAddress = true
       this.$store.dispatch('recommand/getMovieList')
       this.$store.dispatch('recommand/getGenreList')

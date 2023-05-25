@@ -119,6 +119,7 @@ const actions = {
     })
       .then((res) => {
         // console.log(res.data)
+        console.log('use point')
         context.commit('GET_USER_POINT', res.data)
       })
       .catch((err) => {
