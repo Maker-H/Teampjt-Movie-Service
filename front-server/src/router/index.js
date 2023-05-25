@@ -19,6 +19,11 @@ import PayCancel from '@/views/Pay/PayCancel.vue'
 Vue.use(VueRouter)
 
 const routes = [
+	{
+		path: '/',
+		redirect: '/v'
+	},
+
   {
     path: '/v',
     name: 'HomeView',
