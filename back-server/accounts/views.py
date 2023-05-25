@@ -19,7 +19,6 @@ from my_api import SECRETE
 
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
 def user_list(request):
     if request.method == 'POST':
         users = get_user_model().objects.all()
@@ -118,10 +117,10 @@ def get_kakaoPay(request, amount):
         'vat_amount':'0',  # 구매 물품 비과세
         'tax_free_amount':'0',
         # 내 애플리케이션 -> 앱설정 / 플랫폼 - WEB 사이트 도메인에 등록된 정보만 가능
-        # * 등록 : http://127.0.0.1:8000 
-        'approval_url':'http://localhost:8080/v/pay/success', # 결제 성공시 이동  
-        'fail_url':'http://localhost:8080/v/pay/fail',
-        'cancel_url':'http://localhost:8080/v/pay/cancel'
+        # * 등록 : http://localhost:8080 
+        'approval_url': f'{SECRETE.DOMAIN_URL}/v/pay/success', # 결제 성공시 이동  
+        'fail_url': f'{SECRETE.DOMAIN_URL}/v/pay/fail',
+        'cancel_url': f'{SECRETE.DOMAIN_URL}/v/pay/cancel'
     }
     response = requests.post(_url, data=_data, headers=_headers)
     result = response.json()
