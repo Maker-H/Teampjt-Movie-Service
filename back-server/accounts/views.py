@@ -19,7 +19,6 @@ from my_api import SECRETE
 
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
 def user_list(request):
     if request.method == 'POST':
         users = get_user_model().objects.all()
