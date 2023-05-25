@@ -14,6 +14,7 @@ const getters = {
 const mutations = {
   GET_MOVIELIST(state, movies) {
     state.movies = movies;
+    console.log('mut', state.movies)
   },
   GET_GENRELIST(state, genres) {
     state.genres = genres;
@@ -27,6 +28,7 @@ const actions = {
       url: `${API_URL}/movies/`,
     })
       .then((res) => {
+        console.log('act', res.data)
         context.commit('GET_MOVIELIST', res.data)
       })
       .catch((err) => console.log(err));

@@ -11,8 +11,8 @@ import movie from '@/store/modules/movies/movie'
 
 const state = () => {
   return {
-    movies: movie.state.movies,
-    genres: movie.state.genres,
+    movies: [],
+    genres: [],
     weatherData: {},
     recommandGenre: "",
     recommandGenreList: [],
@@ -46,14 +46,15 @@ const getters = {
 
 };
 const mutations = {
-  // GET_MOVIELIST(state, movieList) {
-  //   state.movies = movieList;
-  //   // console.log(state.movies);
-  // },
-  // GET_GENRELIST(state, genres) {
-  //   state.genres = genres;
-  //   //   console.log(state.genres)
-  // },
+  GET_MOVIELIST(state) {
+    console.log('state', movie.state.movies)
+    state.movies = movie.state.movies;
+    console.log('movie', state.movies);
+  },
+  GET_GENRELIST(state) {
+    state.genres = movie.state.genres;
+    console.log('genre', state.genres)
+  },
   GET_WEATHER(state, data) {
     state.weatherData = data;
     const recommandMovieList = weatherToGenre(state);
@@ -71,27 +72,31 @@ const mutations = {
   }
 };
 const actions = {
-  // getMovieList(context) {
-  //   axios({
-  //     methods: "get",
-  //     url: `${API_URL}/movies/`,
-  //   })
-  //     .then((res) => {
-  //       context.commit("GET_MOVIELIST", res.data);
-  //     })
-  //     .catch((err) => console.log(err));
+  getMovieList(context) {
+    movie.actions.getMovieList(context)
+    context.commit('GET_MOVIELIST')
+    // axios({
+    //   methods: "get",
+    //   url: `${API_URL}/movies/`,
+    // })
+    //   .then((res) => {
+    //     context.commit("GET_MOVIELIST", res.data);
+    //   })
+    //   .catch((err) => console.log(err));
 
-  // },
-  // getGenreList(context) {
-  //   axios({
-  //     methods: "get",
-  //     url: `${API_URL}/genres/`,
-  //   })
-  //     .then((res) => {
-  //       context.commit("GET_GENRELIST", res.data);
-  //     })
-  //     .catch((err) => console.log(err));
-  // },
+  },
+  getGenreList(context) {
+    movie.actions.getMovieList(context)
+    context.commit('GET_GENRELIST')
+    // axios({
+    //   methods: "get",
+    //   url: `${API_URL}/genres/`,
+    // })
+    //   .then((res) => {
+    //     context.commit("GET_GENRELIST", res.data);
+    //   })
+    //   .catch((err) => console.log(err));
+  },
   getWeather(context, nxny) {
     // 여기에 nx ny 주기
     const {nx, ny} = nxny

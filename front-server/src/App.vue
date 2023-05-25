@@ -12,10 +12,6 @@ export default {
   components: {
     NavBar,
   },
-  created() {
-    this.$store.dispatch('movie/getMovieList')
-    this.$store.dispatch('movie/getGenreList')
-  }
 }
 </script>
 

@@ -101,6 +101,8 @@ export default {
   created(){
     this.checkLoggedIn()
     this.getUserPoint()
+    this.$store.dispatch('movie/getMovieList')
+    this.$store.dispatch('movie/getGenreList')
   },
   data() {
     return {
@@ -124,6 +126,7 @@ export default {
       return this.$store.getters['recommand/recommandGenre']
     },
     recommandMovie(){
+      console.log('movie', this.$store.state.recommand.movies)
       console.log('movie', this.$store.getters['recommand/recommandMovie'])
       return this.$store.getters['recommand/recommandMovie']
     },
@@ -134,7 +137,6 @@ export default {
       return this.$store.getters['recommand/userPoint']
     },
     center() {
-      console.log('center', this.$store.getters['recommand/center'])
       return this.$store.getters['recommand/center']
     }
   },
@@ -148,12 +150,12 @@ export default {
     getAddress() {
       this.clicked = true
     },
-    getMovieList() {
-      this.$store.dispatch('recommand/getMovieList')
-    },
-    getGenreList() {
-      this.$store.dispatch('recommand/getGenreList')
-    },
+    // getMovieList() {
+    //   this.$store.dispatch('recommand/getMovieList')
+    // },
+    // getGenreList() {
+    //   this.$store.dispatch('recommand/getGenreList')
+    // },
     getRecommandMovieList() {
       const address = this.address.split(" ")
       console.log(typeof(this.userPoint), this.userPoint)
