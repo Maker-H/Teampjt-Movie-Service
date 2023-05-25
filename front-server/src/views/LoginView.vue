@@ -46,7 +46,6 @@ export default {
 			}
 			this.$store.dispatch('login/login', user)
 		},
-
 	}
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3 class="p-2 my-5" style="margin-top:20px;"><b class="bg-warning bg-opacity-75">추천 영화</b></h3>
     <div class="d-flex justify-content-center">
       <div class="d-flex" style="width : 1000px">
         <div>
