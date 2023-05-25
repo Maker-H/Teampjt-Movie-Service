@@ -8,6 +8,9 @@
 <script>
 export default {
   name: 'PayFail',
+  created() {
+    this.$store.dispatch('check/checkLoggedIn')
+  },
   methods: {
   }
 }
