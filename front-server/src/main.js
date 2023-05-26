@@ -4,12 +4,14 @@ import router from './router'
 import store from './store'
 //
 import * as VueGoogleMaps from "vue2-google-maps"
+// 
+import SECRETE from '@/store/SECRETE'
 
 Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyAJxGOuyZNmGJfH9AdGUO7o2ABDjnWdNOw",
+    key: SECRETE.API_KEY,
     libraries: "places",
     region: "KR" 
   }
