@@ -59,12 +59,11 @@
 ### 4. ERD 및 컴포넌트 설계
 
 #### - ERD
-
-![](README_assets/2023-05-25-22-58-42-image.png)
+![image](https://github.com/Maker-H/SSAFY-Movie-Service/assets/83294376/82b500d2-79c6-44be-9842-883e2ca3d9e1)
 
 ##### - 컴포넌트
 
-![](README_assets/2023-05-25-22-59-23-image.png)
+![image](https://github.com/Maker-H/SSAFY-Movie-Service/assets/83294376/81a200e6-aca1-4ebb-af31-4cd1064e05bb)
 
 ---
 
