@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -19,19 +20,48 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-import SECRETE
+from . import SECRETE
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = SECRETE.KEY
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['122.199.118.70', '127.0.0.1', 'localhost' ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # Django Apps
+    'accounts',
+    'movies',
+    'maps',
+
+    'rest_framework',
+
+    # jwt
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+
+    # swagger
+    'drf_yasg',
+
+    # cors
+    'corsheaders',
+
+    # dj_rest_auth 
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+
+    # dj_rest_auth registration
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +70,45 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+
+# enable JWT auth in dj_rest_auth
+REST_AUTH = {
+    'USE_JWT': True,
+    'JWT_AUTH_HTTPONLY':False,
+
+    'SESSION_LOGIN': False,
+
+    'JWT_AUTH_COOKIE': 'my-app-auth',
+    'JWT_AUTH_REFRESH_COOKIE': 'my-refresh-token',
+
+}
+
+# dj_rest_auth settings
+SITE_ID = 1
+
+REST_FRAMEWORK = {
+    # Authentication
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication', 
+
+        # jwt를 사용하거나 token을 사용하거나 둘 중 하나만 사용해야함
+        # 'rest_framework.authentication.TokenAuthentication',
+    ),
+
+    #     # permission
+    'DEFAULT_PERMISSION_CLASSES': [
+        # 'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+    ],
+}
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
+}
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -49,6 +117,17 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:8080',
+#     'http://127.0.0.1:8080',
+#     'https://kapi.kakao.com',
+#     'https://online-pay.kakao.com',
+# ]
 
 ROOT_URLCONF = 'my_api.urls'
 
@@ -104,9 +183,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -124,3 +203,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'accounts.User'

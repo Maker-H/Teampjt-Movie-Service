@@ -1,0 +1,78 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$y3kcjE19CqWYYvreGzp2ip$Qp6FyYoOLoFxP9HlAxraDcbdCINMvC0KRQR2M+H7TyA=",
+        "last_login": "2023-05-23T07:43:06.845Z",
+        "is_superuser": false,
+        "username": "P01072561378",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-23T07:43:06.682Z",
+        "points": -100,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$G2f5nHFdvYUh5wAZdpNptL$zMnSmFMTB8BW2DVPihZuBqJ1z4BUd2Axp5zkF8JUKxM=",
+        "last_login": "2023-05-23T07:46:16.758Z",
+        "is_superuser": false,
+        "username": "P01085295646",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-23T07:46:16.617Z",
+        "points": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$MOuVll0Mxv5LwO4jnZ6Uq8$P67B1xiQF8Ut59+kgW83He4lI1OoeEkrp3BAfEK3+b0=",
+        "last_login": "2023-05-24T01:30:26.573Z",
+        "is_superuser": false,
+        "username": "P0101234",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-24T01:30:26.418Z",
+        "points": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$ZUQVGDp2Jq8mOOjku37cpV$xIm8mK52LlGnPfoEo/N+ky5vrL9MCbDUI19i6Q1GOVo=",
+        "last_login": "2023-05-24T01:31:56.376Z",
+        "is_superuser": false,
+        "username": "P010123",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-24T01:31:56.237Z",
+        "points": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -3,6 +3,8 @@
 
 ### SECRETE ###
 SECRETE.py
+SECRETE.js
+CONSTS.js
 
 ### Django ###
 *.log

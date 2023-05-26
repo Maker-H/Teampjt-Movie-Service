@@ -1,0 +1,1737 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 12:29:55
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 12:30:10
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+/home/heesom/SSAFY-Movie-Service/back-server/my_api/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:33:57
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:34:01
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:34:50
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:40:43
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:41:49
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:46:45
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 19:48:53
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+/home/heesom/SSAFY-Movie-Service/back-server/my_api/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 20:06:09
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://127.0.0.1:8887/
+Quit the server with CONTROL-C.
+[23/May/2023 20:11:42] "GET /api/movies HTTP/1.1" 301 0
+[23/May/2023 20:12:02] "GET /api/movies HTTP/1.1" 301 0
+[23/May/2023 20:12:21] "GET /api/movies HTTP/1.1" 301 0
+[23/May/2023 20:12:41] "GET /api/movies HTTP/1.1" 301 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 23, 2023 - 21:56:35
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+[23/May/2023 21:59:28] "GET // HTTP/1.1" 404 179
+[23/May/2023 21:59:34] "GET /api/movies/ HTTP/1.1" 200 99760
+[23/May/2023 21:59:56] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[23/May/2023 21:59:56] "POST /api/login/ HTTP/1.1" 200 567
+[23/May/2023 21:59:56] "GET /api/movies/ HTTP/1.1" 200 99760
+[23/May/2023 22:00:01] "GET /api/movies/ HTTP/1.1" 200 99760
+[23/May/2023 22:00:11] "POST /api/login/ HTTP/1.1" 200 567
+[23/May/2023 22:00:12] "GET /api/movies/ HTTP/1.1" 200 99760
+[23/May/2023 22:00:13] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[23/May/2023 22:00:13] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[23/May/2023 22:00:13] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[23/May/2023 22:00:13] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[23/May/2023 22:00:13] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[23/May/2023 22:00:13] "POST /api/profile/point/ HTTP/1.1" 200 1
+[23/May/2023 22:00:17] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 500 145
+[23/May/2023 23:44:41] "GET / HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 09:09:14
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+[24/May/2023 09:37:16] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:20:39] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:40:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:41:15] "OPTIONS /api/profile/message/ HTTP/1.1" 200 0
+01085295646
+[24/May/2023 10:41:15] "POST /api/profile/message/ HTTP/1.1" 200 6
+[24/May/2023 10:41:40] "OPTIONS /api/login/registeration/ HTTP/1.1" 200 0
+[24/May/2023 10:41:40] "POST /api/login/registeration/ HTTP/1.1" 201 567
+[24/May/2023 10:41:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:02] "GET /api/comments/ HTTP/1.1" 404 37
+[24/May/2023 10:42:03] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:05] "GET /api/comments/ HTTP/1.1" 404 37
+[24/May/2023 10:42:06] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:06] "GET /api/comments/ HTTP/1.1" 404 37
+[24/May/2023 10:42:07] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:18] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[24/May/2023 10:42:19] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 10:42:19] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:20] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[24/May/2023 10:42:20] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[24/May/2023 10:42:20] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[24/May/2023 10:42:20] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 10:42:20] "POST /api/profile/point/ HTTP/1.1" 200 1
+[24/May/2023 10:42:20] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 10:42:30] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:30] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:33] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:35] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:36] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:37] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:39] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:41] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:42:42] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:42:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:43:18] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:43:20] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:43:20] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:43:22] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:43:24] "OPTIONS /api/liked-movies/667538/ HTTP/1.1" 200 0
+[24/May/2023 10:43:24] "GET /api/comments/ HTTP/1.1" 404 37
+[24/May/2023 10:43:24] "GET /api/movies/667538/ HTTP/1.1" 200 581
+[24/May/2023 10:43:24] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:43:25] "POST /api/liked-movies/667538/ HTTP/1.1" 200 5
+[24/May/2023 10:43:31] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 10:43:32] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:43:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:03] "POST /api/liked-movies/667538/ HTTP/1.1" 200 5
+[24/May/2023 10:44:03] "GET /api/comments/ HTTP/1.1" 404 37
+[24/May/2023 10:44:03] "GET /api/movies/667538/ HTTP/1.1" 200 581
+[24/May/2023 10:44:03] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:04] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:06] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:06] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:08] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:10] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:41] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:43] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:50] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:50] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:52] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:53] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:53] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:54] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:58] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:58] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:44:59] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:44:59] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:45:00] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:45:00] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:45:01] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:45:01] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:45:02] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:45:02] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:45:06] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:45:06] "GET /api/movies/ HTTP/1.1" 200 99760
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 10:45:39
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 10:46:13
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 10:46:24
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+[24/May/2023 10:46:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:46:52] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 10:46:52] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:46:53] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 10:46:53] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 10:46:53] "POST /api/profile/point/ HTTP/1.1" 200 1
+[24/May/2023 10:46:55] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+[24/May/2023 10:46:55] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:46:55] "GET /api/profile/kakaoPay/1000/ HTTP/1.1" 200 816
+[24/May/2023 10:47:34] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:35] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:36] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:36] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:38] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:38] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:38] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:39] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:39] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:40] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:40] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:40] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:40] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:40] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:40] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:40] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 10:47:40] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:40] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:40] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:41] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:41] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:41] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:41] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:41] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:41] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:43] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:44] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:44] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:44] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:45] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:46] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:46] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:46] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:46] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:46] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:46] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:46] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:46] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:46] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:46] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:46] "GET /api/genres/ HTTP/1.1" 200 536
+[24/May/2023 10:47:46] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[24/May/2023 10:47:46] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:47:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 10:48:12] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 10:48:12] "POST /api/profile/point/ HTTP/1.1" 200 5
+[24/May/2023 10:48:12] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 10:48:21] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 13:22:00] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Å,d')
+[24/May/2023 13:22:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[24/May/2023 19:46:16] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 19:46:39] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[24/May/2023 19:46:39] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 19:46:39] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 19:46:42] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[24/May/2023 19:46:42] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[24/May/2023 19:46:42] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[24/May/2023 19:46:42] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 19:46:42] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 19:46:42] "POST /api/profile/point/ HTTP/1.1" 200 1
+[24/May/2023 19:46:45] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+[24/May/2023 19:46:45] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[24/May/2023 19:46:45] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 816
+[24/May/2023 19:47:55] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 19:47:55] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 19:47:55] "POST /api/profile/point/ HTTP/1.1" 200 4
+[24/May/2023 19:50:20] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[24/May/2023 19:50:20] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 19:50:20] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 19:50:22] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[24/May/2023 19:50:22] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[24/May/2023 19:50:22] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[24/May/2023 19:50:22] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 19:50:22] "POST /api/profile/point/ HTTP/1.1" 200 4
+[24/May/2023 19:50:22] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 19:50:24] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 816
+[24/May/2023 19:52:06] "GET /v/pay/success?pg_token=db98bfff4ce024968cbb HTTP/1.1" 404 179
+[24/May/2023 19:52:06] "GET /favicon.ico HTTP/1.1" 404 179
+[24/May/2023 19:52:34] "POST /api/profile/paySuccess/db98bfff4ce024968cbb/T46debf062ea0bae5baa/ HTTP/1.1" 200 422
+[24/May/2023 19:52:34] "OPTIONS /api/profile/point/update/5000/ HTTP/1.1" 200 0
+[24/May/2023 19:52:34] "POST /api/profile/point/update/5000/ HTTP/1.1" 200 4
+[24/May/2023 19:53:06] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 19:53:13] "POST /api/login/ HTTP/1.1" 200 567
+[24/May/2023 19:53:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[24/May/2023 19:53:15] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[24/May/2023 19:53:15] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[24/May/2023 19:53:15] "POST /api/profile/point/ HTTP/1.1" 200 4
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 22:27:06
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+/home/heesom/SSAFY-Movie-Service/back-server/accounts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): maps.
+Run 'python manage.py migrate' to apply them.
+May 24, 2023 - 22:30:05
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 22:30:08
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 22:31:56
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 24, 2023 - 22:34:26
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:25:00
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:25:14
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+/home/heesom/SSAFY-Movie-Service/back-server/my_api/SECRETE.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:29:50
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:30:01
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+[25/May/2023 09:30:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:30:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:30:45] "OPTIONS /api/liked-movies/615656/ HTTP/1.1" 200 0
+[25/May/2023 09:30:45] "OPTIONS /api/profile/users/ HTTP/1.1" 200 0
+[25/May/2023 09:30:45] "OPTIONS /api/liked-movies/615656/ HTTP/1.1" 200 0
+[25/May/2023 09:30:45] "OPTIONS /api/profile/user-data/ HTTP/1.1" 200 0
+Internal Server Error: /api/movies/615656/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 27, in movie_detail
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:30:45] "GET /api/movies/615656/ HTTP/1.1" 500 180613
+Internal Server Error: /api/comments/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 33, in comment_list
+    comments = get_list_or_404(Comment)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:30:45] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 09:30:45] "GET /api/comments/ HTTP/1.1" 500 161419
+Internal Server Error: /api/movies/615656/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 27, in movie_detail
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:30:45] "GET /api/movies/615656/ HTTP/1.1" 500 180613
+Unauthorized: /api/liked-movies/615656/
+Unauthorized: /api/liked-movies/615656/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:30:45] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:30:45] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:30:45] "POST /api/profile/users/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:30:45] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Internal Server Error: /api/comments/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 33, in comment_list
+    comments = get_list_or_404(Comment)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:30:45] "GET /api/comments/ HTTP/1.1" 500 161419
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:31:02] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:31:02] "POST /api/profile/users/ HTTP/1.1" 401 228
+Internal Server Error: /api/comments/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 33, in comment_list
+    comments = get_list_or_404(Comment)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:02] "GET /api/comments/ HTTP/1.1" 500 161419
+[25/May/2023 09:31:08] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+Unauthorized: /api/profile/point/use/100/
+[25/May/2023 09:31:08] "POST /api/profile/point/use/100/ HTTP/1.1" 401 228
+[25/May/2023 09:31:08] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 09:31:08] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[25/May/2023 09:31:08] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 09:31:08] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 09:31:08] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 09:31:09] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+Bad Request: /api/token/refresh/
+[25/May/2023 09:31:09] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Bad Request: /api/token/refresh/
+Unauthorized: /api/liked-movies/
+Unauthorized: /api/liked-movies/
+[25/May/2023 09:31:09] "POST /api/liked-movies/ HTTP/1.1" 401 228
+[25/May/2023 09:31:09] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 09:31:09] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/
+[25/May/2023 09:31:09] "POST /api/profile/point/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+[25/May/2023 09:31:09] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 09:31:39] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[25/May/2023 09:31:39] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 09:31:39] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:31:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:31:41] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 09:31:41] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 09:31:41] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 09:31:41] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 09:31:41] "GET /api/genres/ HTTP/1.1" 200 536
+Internal Server Error: /api/movies/615656/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 27, in movie_detail
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:41] "GET /api/movies/615656/ HTTP/1.1" 500 180613
+Internal Server Error: /api/comments/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 33, in comment_list
+    comments = get_list_or_404(Comment)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:41] "GET /api/comments/ HTTP/1.1" 500 161419
+Internal Server Error: /api/movies/615656/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 27, in movie_detail
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:41] "GET /api/movies/615656/ HTTP/1.1" 500 180613
+Internal Server Error: /api/comments/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 33, in comment_list
+    comments = get_list_or_404(Comment)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:41] "GET /api/comments/ HTTP/1.1" 500 161419
+Internal Server Error: /api/movies/615656/
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: movies_comment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/movies/views.py", line 27, in movie_detail
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/heesom/SSAFY-Movie-Service/back-server/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: movies_comment.user_id
+[25/May/2023 09:31:59] "GET /api/movies/615656/ HTTP/1.1" 500 180547
+Not Found: /favicon.ico
+[25/May/2023 09:32:00] "GET /favicon.ico HTTP/1.1" 404 3088
+/home/heesom/SSAFY-Movie-Service/back-server/accounts/migrations/0001_initial.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:39:18
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:39:20
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+[25/May/2023 09:39:26] "GET /api/genres/ HTTP/1.1" 200 536
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/liked-movies/615656/
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:39:26] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+Unauthorized: /api/liked-movies/615656/
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/liked-movies/615656/
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/liked-movies/615656/
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 09:39:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 09:39:26] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 09:39:34] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:39:34] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/liked-movies/615656/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:36] "POST /api/profile/users/ HTTP/1.1" 401 228
+Unauthorized: /api/liked-movies/615656/
+[25/May/2023 09:39:36] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:36] "POST /api/liked-movies/615656/ HTTP/1.1" 401 228
+[25/May/2023 09:39:36] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:36] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:39:36] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+[25/May/2023 09:39:36] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 09:39:36] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:39:36] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:38] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:38] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:38] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:44] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:44] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:44] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:45] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:45] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:45] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:45] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:45] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:45] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:46] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:46] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:46] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:39:50] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:50] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:50] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:39:58] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:39:58] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:39:58] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:52:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:52:14] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 09:52:17] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:52:17] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:52:17] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:52:20] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:52:20] "GET /api/movies/ HTTP/1.1" 200 99760
+/home/heesom/SSAFY-Movie-Service/back-server/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 09:53:21
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+[25/May/2023 09:59:29] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:59:29] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 09:59:34] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 09:59:34] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 09:59:34] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 09:59:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 09:59:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:00:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:00:28] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:00:29] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:00:30] "OPTIONS /api/liked-movies/667538/ HTTP/1.1" 200 0
+[25/May/2023 10:00:30] "GET /api/movies/667538/ HTTP/1.1" 200 1149
+Unauthorized: /api/profile/user-data/
+[25/May/2023 10:00:30] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 10:00:30] "OPTIONS /api/liked-movies/667538/ HTTP/1.1" 200 0
+Unauthorized: /api/profile/users/
+[25/May/2023 10:00:30] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 10:00:30] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:00:30] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:00:31] "GET /api/movies/667538/ HTTP/1.1" 200 1149
+[25/May/2023 10:00:31] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/liked-movies/667538/
+[25/May/2023 10:00:31] "POST /api/liked-movies/667538/ HTTP/1.1" 401 228
+Unauthorized: /api/liked-movies/667538/
+[25/May/2023 10:00:31] "POST /api/liked-movies/667538/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/users/
+[25/May/2023 10:00:32] "POST /api/profile/users/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 10:00:32] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:00:32] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 10:04:17] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 10:04:17] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 10:04:17] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/point/use/100/
+[25/May/2023 10:04:25] "POST /api/profile/point/use/100/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+[25/May/2023 10:04:25] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Unauthorized: /api/liked-movies/
+Bad Request: /api/token/refresh/
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:04:25] "POST /api/liked-movies/ HTTP/1.1" 401 228
+[25/May/2023 10:04:25] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/
+Bad Request: /api/token/refresh/
+[25/May/2023 10:04:25] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:04:25] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:04:25] "POST /api/profile/point/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 10:04:51] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 10:04:51] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:04:51] "POST /api/profile/users/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/use/100/
+[25/May/2023 10:04:52] "POST /api/profile/point/use/100/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+Unauthorized: /api/profile/point/
+[25/May/2023 10:04:53] "POST /api/profile/point/ HTTP/1.1" 401 228
+Unauthorized: /api/liked-movies/
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:04:53] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Bad Request: /api/token/refresh/
+[25/May/2023 10:04:53] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+[25/May/2023 10:04:53] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:04:53] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:04:53] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/use/100/
+[25/May/2023 10:05:50] "POST /api/profile/point/use/100/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:05:51] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+Bad Request: /api/token/refresh/
+[25/May/2023 10:05:51] "POST /api/profile/point/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+[25/May/2023 10:05:51] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:05:51] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:05:51] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:05:51] "POST /api/liked-movies/ HTTP/1.1" 401 228
+[25/May/2023 10:14:01] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:14:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:14:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:19:54] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:19:55] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 10:19:56] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 10:19:56] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 10:19:56] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:26:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:26:35] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:26:53] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 10:26:53] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:26:54] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:26:55] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:26:55] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:26:55] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:26:55] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:26:55] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:26:58] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 120
+[25/May/2023 10:27:00] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:01] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:27:01] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:27:01] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:27:01] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:27:01] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:27:08] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:08] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:08] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:08] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:27:09] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:27:09] "GET /api/profile/kakaoPay/10000/ HTTP/1.1" 200 120
+[25/May/2023 10:27:09] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:27:09] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:27:13] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:27:13] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:27:13] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:27:13] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:27:13] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:27:16] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:16] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:27:16] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:16] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:27:16] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:27:16] "GET /api/profile/kakaoPay/1000/ HTTP/1.1" 200 120
+[25/May/2023 10:27:16] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:27:17] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:28:43] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:28:43] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:28:43] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:28:43] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:28:43] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:28:45] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:28:45] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:28:45] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:28:45] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:28:45] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:28:45] "GET /api/profile/kakaoPay/10000/ HTTP/1.1" 200 120
+[25/May/2023 10:28:45] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:28:45] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:30:35] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:30:35] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:30:35] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:30:35] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:30:35] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:30:37] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:30:37] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:30:37] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:30:37] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:30:37] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:30:37] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 120
+[25/May/2023 10:30:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:30:38] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:31:16] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[25/May/2023 10:31:16] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 10:31:17] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:31:17] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:31:18] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 10:31:18] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 10:31:18] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[25/May/2023 10:31:18] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 10:31:18] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 10:31:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:31:19] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:31:19] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:31:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:31:19] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:31:22] "GET /api/profile/kakaoPay/10000/ HTTP/1.1" 200 120
+[25/May/2023 10:31:23] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+[25/May/2023 10:31:23] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:31:23] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:31:23] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:31:23] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:31:23] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:31:23] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:34:12] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+Unauthorized: /api/profile/point/use/100/
+[25/May/2023 10:34:12] "POST /api/profile/point/use/100/ HTTP/1.1" 401 228
+[25/May/2023 10:34:13] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 10:34:13] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 10:34:13] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 10:34:13] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 10:34:13] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 10:34:13] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:34:13] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Bad Request: /api/token/refresh/
+Unauthorized: /api/liked-movies/
+[25/May/2023 10:34:13] "POST /api/liked-movies/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/point/
+[25/May/2023 10:34:13] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Bad Request: /api/token/refresh/
+[25/May/2023 10:34:13] "POST /api/token/refresh/ HTTP/1.1" 400 55
+Bad Request: /api/token/refresh/
+[25/May/2023 10:34:13] "POST /api/token/refresh/ HTTP/1.1" 400 55
+[25/May/2023 10:34:13] "POST /api/profile/point/ HTTP/1.1" 401 228
+[25/May/2023 10:34:23] "OPTIONS /api/login/ HTTP/1.1" 200 0
+[25/May/2023 10:34:23] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 10:34:23] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:34:23] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:34:27] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:34:27] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:34:27] "POST /api/profile/point/ HTTP/1.1" 200 1
+[25/May/2023 10:34:27] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:34:27] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:34:30] "GET /api/profile/kakaoPay/1000/ HTTP/1.1" 200 120
+[25/May/2023 10:34:31] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:34:32] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:34:32] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:34:32] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:34:32] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:34:32] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:35:09] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:09] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:09] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:09] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:10] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:10] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 120
+[25/May/2023 10:35:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:35:26] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:35:26] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:35:26] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:35:26] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:35:32] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:32] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:32] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:32] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:32] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:32] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:33] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:36] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:36] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:38] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:35:38] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:35:38] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:35:38] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:35:38] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:35:42] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:42] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:42] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 10:35:42] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:42] "GET /api/profile/kakaoPay/1000/ HTTP/1.1" 200 120
+[25/May/2023 10:35:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:35:42] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:35:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:46] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 10:39:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:49] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:39:49] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:39:49] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 10:39:49] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:39:49] "POST /api/liked-movies/ HTTP/1.1" 200 2
+Bad Request: /api/login/
+[25/May/2023 10:39:52] "POST /api/login/ HTTP/1.1" 400 87
+[25/May/2023 10:39:52] "GET /api/profile/kakaoPay/5000/ HTTP/1.1" 200 816
+Bad Request: /api/login/
+[25/May/2023 10:39:53] "POST /api/login/ HTTP/1.1" 400 87
+[25/May/2023 10:39:53] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:39:54] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:39:54] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:39:54] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:39:54] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:39:54] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:39:57] "POST /api/login/ HTTP/1.1" 200 567
+[25/May/2023 10:39:57] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:39:58] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:40:00] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:40:00] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:40:00] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:40:00] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:40:00] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:40:02] "GET /api/profile/kakaoPay/1000/ HTTP/1.1" 200 816
+[25/May/2023 10:40:03] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:40:04] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:40:04] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 10:40:04] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:40:04] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 10:40:04] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 10:41:03] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:03] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:05] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:05] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:41:05] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:41:05] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 10:41:05] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:05] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:05] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:06] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:06] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 10:41:06] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 10:41:08] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:08] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:10] "OPTIONS /api/liked-movies/385687/ HTTP/1.1" 200 0
+[25/May/2023 10:41:10] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 10:41:10] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 10:41:10] "OPTIONS /api/liked-movies/385687/ HTTP/1.1" 200 0
+[25/May/2023 10:41:10] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:10] "GET /api/movies/385687/ HTTP/1.1" 200 1110
+[25/May/2023 10:41:10] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:10] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:10] "POST /api/liked-movies/385687/ HTTP/1.1" 200 5
+[25/May/2023 10:41:10] "POST /api/liked-movies/385687/ HTTP/1.1" 200 5
+[25/May/2023 10:41:10] "GET /api/movies/385687/ HTTP/1.1" 200 1110
+[25/May/2023 10:41:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:15] "OPTIONS /api/liked-movies/620705/ HTTP/1.1" 200 0
+[25/May/2023 10:41:15] "OPTIONS /api/liked-movies/620705/ HTTP/1.1" 200 0
+[25/May/2023 10:41:15] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:15] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 10:41:15] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 10:41:15] "GET /api/movies/620705/ HTTP/1.1" 200 887
+[25/May/2023 10:41:15] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:15] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:15] "POST /api/liked-movies/620705/ HTTP/1.1" 200 5
+[25/May/2023 10:41:15] "POST /api/liked-movies/620705/ HTTP/1.1" 200 5
+[25/May/2023 10:41:15] "GET /api/movies/620705/ HTTP/1.1" 200 887
+[25/May/2023 10:41:18] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:18] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:19] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 10:41:19] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:19] "POST /api/liked-movies/667538/ HTTP/1.1" 200 5
+[25/May/2023 10:41:19] "GET /api/movies/667538/ HTTP/1.1" 200 1149
+[25/May/2023 10:41:19] "POST /api/liked-movies/667538/ HTTP/1.1" 200 5
+[25/May/2023 10:41:19] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 10:41:19] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:19] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:19] "GET /api/movies/667538/ HTTP/1.1" 200 1149
+[25/May/2023 10:41:24] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:24] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 10:41:25] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:25] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 10:41:25] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 10:41:25] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 10:41:25] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+[25/May/2023 10:41:25] "POST /api/liked-movies/615656/ HTTP/1.1" 200 5
+[25/May/2023 10:41:25] "GET /api/genres/ HTTP/1.1" 200 536
+[25/May/2023 10:41:25] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 10:41:25] "GET /api/movies/615656/ HTTP/1.1" 200 1054
+/home/heesom/SSAFY-Movie-Service/back-server/my_api/SECRETE.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 10:42:38
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+[25/May/2023 11:01:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:01:48] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:01:48] "OPTIONS /api/profile/users/ HTTP/1.1" 200 0
+[25/May/2023 11:01:48] "OPTIONS /api/profile/user-data/ HTTP/1.1" 200 0
+[25/May/2023 11:01:48] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 11:01:48] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 11:01:48] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:01:48] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:48] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:48] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:01:48] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:01:49] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:49] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:01:49] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:01:49] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:51] "POST /api/profile/point/use/100/ HTTP/1.1" 200 5
+[25/May/2023 11:01:52] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:01:52] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:01:52] "POST /api/profile/point/ HTTP/1.1" 200 5
+[25/May/2023 11:01:52] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:52] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:01:54] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:01:54] "GET /api/movies/ HTTP/1.1" 200 99760
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2023 - 11:03:06
+Django version 3.2.18, using settings 'my_api.settings'
+Starting development server at http://0.0.0.0:8887/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Unauthorized: /api/profile/users/
+[25/May/2023 11:03:08] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 11:03:08] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:03:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:03:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:03:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:03:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:03:08] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:03:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:03:17] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:03:18] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:05:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:05:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:07:09] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:07:10] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:07:12] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:07:12] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:07:12] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:07:14] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 11:07:15] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:07:15] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:07:15] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:07:15] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 11:07:15] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:10:20] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:10:20] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:10:21] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:10:21] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:10:21] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:11:05] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03A\x18&¦T^Bø\x81zÅu\x03\x9c\x01Á}kt;]ã')
+[25/May/2023 11:11:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[25/May/2023 11:13:04] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:13:05] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 11:13:07] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 11:13:07] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:13:07] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:13:07] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:13:07] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:13:07] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:13:07] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:13:07] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:13:07] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:13:07] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:13:07] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:13:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:13:08] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:13:08] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:13:08] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:13:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:13:14] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:21:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:21:40] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:22:41] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:22:42] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:22:47] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:22:47] "GET /api/movies/ HTTP/1.1" 200 99760
+Unauthorized: /api/profile/users/
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:22:49] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:22:49] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 11:22:49] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:22:50] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:22:50] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:22:50] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:22:50] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:22:50] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:22:50] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:22:50] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:22:50] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:23:04] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:23:04] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:26:50] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:26:50] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:16] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:16] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:19] "OPTIONS /api/profile/users/ HTTP/1.1" 200 0
+[25/May/2023 11:32:19] "OPTIONS /api/profile/user-data/ HTTP/1.1" 200 0
+[25/May/2023 11:32:19] "GET /api/comments/ HTTP/1.1" 200 3099
+Unauthorized: /api/profile/user-data/
+Unauthorized: /api/profile/users/
+[25/May/2023 11:32:19] "POST /api/profile/users/ HTTP/1.1" 401 228
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:32:19] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+[25/May/2023 11:32:19] "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+Unauthorized: /api/profile/user-data/
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 401 228
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:19] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:19] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:22] "OPTIONS /api/profile/point/use/100/ HTTP/1.1" 200 0
+[25/May/2023 11:32:22] "POST /api/profile/point/use/100/ HTTP/1.1" 200 4
+[25/May/2023 11:32:23] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 11:32:23] "OPTIONS /api/liked-movies/ HTTP/1.1" 200 0
+[25/May/2023 11:32:23] "OPTIONS /api/profile/point/ HTTP/1.1" 200 0
+[25/May/2023 11:32:23] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:23] "POST /api/token/refresh/ HTTP/1.1" 200 291
+[25/May/2023 11:32:23] "POST /api/profile/point/ HTTP/1.1" 200 4
+[25/May/2023 11:32:23] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:32:23] "POST /api/liked-movies/ HTTP/1.1" 200 2
+[25/May/2023 11:32:27] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:27] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:32:27] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:32:31] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:32] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:32] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:32:32] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:32:32] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:34] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:34] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:36] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:37] "GET /api/movies/ HTTP/1.1" 200 99760
+[25/May/2023 11:32:38] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:32:38] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:32:38] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:39] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:39] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:32:39] "GET /api/comments/ HTTP/1.1" 200 3099
+[25/May/2023 11:32:39] "POST /api/profile/user-data/ HTTP/1.1" 200 34
+[25/May/2023 11:32:39] "POST /api/profile/users/ HTTP/1.1" 200 132
+[25/May/2023 11:32:39] "GET /api/comments/ HTTP/1.1" 200 3099
+Invalid HTTP_HOST header: '127.0.0.1:8887'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+[25/May/2023 13:00:10] "GET / HTTP/1.0" 400 67691
