@@ -17,7 +17,6 @@
         <MovieItemList :movies="likedMovies"/>
       </div>
     </div>
-    <!-- TODO: pay로 넘어가는 라우터 만들기 -->
   </div>
 </template>
 
