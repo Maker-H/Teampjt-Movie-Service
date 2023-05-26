@@ -1,0 +1,179 @@
+
+[
+{
+    "model": "movies.comment",
+    "pk": 11,
+    "fields": {
+        "movie": 667538,
+        "content": "진짜 재밌어요!",
+        "created_at": "2023-05-24T07:38:58.312Z",
+        "updated_at": "2023-05-24T07:38:58.312Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 12,
+    "fields": {
+        "movie": 615656,
+        "content": "좋은 영화 소재 + 할리우드 연출 및 기술력.....+ 중국 자본 = 영화 망함",
+        "created_at": "2023-05-24T08:20:52.370Z",
+        "updated_at": "2023-05-24T08:20:52.370Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 13,
+    "fields": {
+        "movie": 615656,
+        "content": "여름엔 바다, 바다면 죠스",
+        "created_at": "2023-05-24T08:21:53.206Z",
+        "updated_at": "2023-05-24T08:21:53.206Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 14,
+    "fields": {
+        "movie": 615656,
+        "content": "A급을 표방한 블록버스터.... 내용이 B급",
+        "created_at": "2023-05-24T08:22:15.337Z",
+        "updated_at": "2023-05-24T08:22:15.337Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 15,
+    "fields": {
+        "movie": 447277,
+        "content": "언제 개봉하지",
+        "created_at": "2023-05-24T08:22:33.729Z",
+        "updated_at": "2023-05-24T08:22:33.729Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 16,
+    "fields": {
+        "movie": 385687,
+        "content": "내차를 느끼면서, 내 길을 바라보고, 힘껏 날아",
+        "created_at": "2023-05-24T08:22:58.844Z",
+        "updated_at": "2023-05-24T08:22:58.844Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 17,
+    "fields": {
+        "movie": 385687,
+        "content": "죽은놈이 살아 돌아온 이유는 딱 하나지. 복수",
+        "created_at": "2023-05-24T08:23:03.416Z",
+        "updated_at": "2023-05-24T08:23:03.416Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 18,
+    "fields": {
+        "movie": 385687,
+        "content": "30초안에 로마를 구해봐",
+        "created_at": "2023-05-24T08:23:07.183Z",
+        "updated_at": "2023-05-24T08:23:07.183Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 19,
+    "fields": {
+        "movie": 620705,
+        "content": "오 이거 재밌겠는데 별점은 왜 낮지",
+        "created_at": "2023-05-24T08:24:02.722Z",
+        "updated_at": "2023-05-24T08:24:02.722Z",
+        "user": 1
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 20,
+    "fields": {
+        "movie": 615656,
+        "content": "말도 안되는 주인공의 슈퍼히어로 저리가라급 활약",
+        "created_at": "2023-05-24T08:26:47.792Z",
+        "updated_at": "2023-05-24T08:26:47.792Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 21,
+    "fields": {
+        "movie": 667538,
+        "content": "이거 범블비랑 이어지는 건가?",
+        "created_at": "2023-05-24T08:27:22.534Z",
+        "updated_at": "2023-05-24T08:27:22.534Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 22,
+    "fields": {
+        "movie": 667538,
+        "content": "이거 아직 개봉 안했는데 위에 사람은 뭘 보고 재밌다는거지",
+        "created_at": "2023-05-24T08:27:45.095Z",
+        "updated_at": "2023-05-24T08:27:45.095Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 23,
+    "fields": {
+        "movie": 620705,
+        "content": "영화인가 드라마인가",
+        "created_at": "2023-05-24T08:28:21.353Z",
+        "updated_at": "2023-05-24T08:28:21.353Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 24,
+    "fields": {
+        "movie": 620705,
+        "content": "재밌으려나",
+        "created_at": "2023-05-24T08:30:51.842Z",
+        "updated_at": "2023-05-24T08:30:51.842Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 25,
+    "fields": {
+        "movie": 76600,
+        "content": "급류가 아니라 넋을 놓은 채 마냥 몰입해 있는, 관객을 수면 아래로 끌어당기는 재미",
+        "created_at": "2023-05-24T08:32:40.770Z",
+        "updated_at": "2023-05-24T08:32:40.770Z",
+        "user": 2
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 26,
+    "fields": {
+        "movie": 76600,
+        "content": "물에 관한 시각효과와 액션의 모든 것.",
+        "created_at": "2023-05-24T08:33:19.292Z",
+        "updated_at": "2023-05-24T08:33:19.292Z",
+        "user": 2
+    }
+}
+]
