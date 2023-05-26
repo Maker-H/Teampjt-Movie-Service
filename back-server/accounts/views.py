@@ -122,6 +122,7 @@ def get_kakaoPay(request, amount):
         'fail_url': f'{SECRETE.DOMAIN_URL}/v/pay/fail',
         'cancel_url': f'{SECRETE.DOMAIN_URL}/v/pay/cancel'
     }
+
     response = requests.post(_url, data=_data, headers=_headers)
     result = response.json()
     return JsonResponse(result)
