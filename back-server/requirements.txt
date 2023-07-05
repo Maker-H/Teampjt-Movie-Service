@@ -14,7 +14,7 @@ cryptography==40.0.2
 defusedxml==0.7.1
 distlib==0.3.6
 dj-rest-auth==4.0.1
-Django==3.2.18
+Django==3.2.20
 django-allauth==0.54.0
 django-cors-headers==4.0.0
 djangorestframework==3.14.0
